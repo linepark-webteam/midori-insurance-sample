@@ -41,16 +41,7 @@ window.addEventListener('scroll', function() {
     triggerAnimation(element, 'slide-in');
   });
   fadeInElements.forEach(element => {
-    triggerAnimation(element, 'fade-in'); // フェードインの要素に対してアニメーションをトリガー
+    triggerAnimation(element, 'fade-in');
   });
 });
 });
-
-  // スクロールイベントのリスナーを追加
-  // window.addEventListener('scroll', function() {
-  //     triggerAnimation(slideInRight, 'slide-in-right');
-  //     triggerAnimation(slideInLeft, 'slide-in-left');
-  //     triggerAnimation(slideInBottom, 'slide-in-bottom');
-  //     triggerAnimation(slideInTop, 'slide-in-top');
-  //     triggerAnimation(slideIn, 'slide-in');
-  // });
