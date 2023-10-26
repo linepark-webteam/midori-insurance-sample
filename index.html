@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【作成中】みどり総合保険事務所</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"> <!-- 自作のcss -->
+  <link rel="stylesheet" href="./css/responsive.css"> <!-- 自作のcss -->
+</head>
+
+<body>
+  <h1 class="d-flex justify-content-center">みどり総合保険事務所<!-- 名刺の画像等に変更？ --></h1>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">みどり総合保険事務所<!-- ロゴ等に変更？ --></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./philosophy/">経営理念</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">代表プロフィール</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">個人のお客様</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">法人のお客様</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">アクセス</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <section class="hero mb-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/image1.webp" class="d-block w-100" alt="Image 1">
+          <!-- <div class="carousel-caption">
+            <h5>First Slide Title</h5>
+            <p>First slide description.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="./img/image2.webp" class="d-block w-100" alt="Image 2">
+          <!-- <div class="carousel-caption">
+            <h5>Second Slide Title</h5>
+            <p>Second slide description.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="./img/image3.webp" class="d-block w-100" alt="Image 3">
+          <!-- <div class="carousel-caption">
+            <h5>Third Slide Title</h5>
+            <p>Third slide description.</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="carousel-fixed-text position-absolute text-white p-3">
+        <h3>常にお客様のリスクを分析し、</h3>
+        <h2>最小の費用で最大の安心を。</h2>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- お知らせ -->
+  <section class="py-5">
+    <div class="container slide-right-content">
+      <div class="row d-flex justify-content-center">
+        <h2 class="col-12">お知らせ</h2>
+      </div>
+      <div class="row">
+        <h3>キャンペーン</h3>
+        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam quam excepturi harum
+          mollitia laboriosam recusandae, optio possimus est, voluptas dicta fugiat dolorem nisi. Laborum vitae delectus
+          mollitia hic molestiae?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 経営理念 -->
+  <section class="py-5">
+    <div class="container policy slide-left-content">
+      <div class="row d-flex justify-content-center">
+        <h2 class="col-12">経営理念</h2>
+      </div>
+      <div class="row">
+        <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam quam excepturi harum
+          mollitia laboriosam recusandae, optio possimus est, voluptas dicta fugiat dolorem nisi. Laborum vitae delectus
+          mollitia hic molestiae?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="insurance-products py-5">
+    <div class="d-flex">
+      <div class="personal-products container slide-bottom-content mb-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>個人のお客様</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum architecto consequatur nisi non temporibus
+              asperiores deserunt iste repellat ipsam veritatis. Id repellendus tempora iure consequatur ipsum quo ut
+              vero
+              exercitationem.</p>
+              <button class="btn btn-info col-12 fade-in"><a href="#">商品紹介リンク</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="personal-products container slide-right-content mb-3">
+            <img class="col-12 mt-3 slide-right-content" src="./img/image1.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="corporation-products container">
+      <div class="row flex-row-reverse">
+        <div class="col-lg-6 slide-right-content">
+          <h2>法人のお客様</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim dolores amet necessitatibus
+            accusamus, placeat minima, voluptatibus magnam omnis laboriosam neque fugiat optio qui delectus quia dolor
+            voluptas est impedit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum architecto consequatur nisi non temporibus
+            asperiores deserunt iste repellat ipsam veritatis. Id repellendus tempora iure consequatur ipsum quo ut vero
+            exercitationem.</p>
+          <button class="btn btn-info col-12"><a href="#">商品紹介リンク</a></button>
+        </div>
+        <div class="col-lg-6 slide-bottom-content">
+          <img class="col-12 mt-3" src="./img/image2.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- access -->
+  <section class="access py-5">
+    <div class="container fade-in">
+      <div class="row d-flex justify-content-center">
+        <h2 class="col-12">アクセス</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 slide-in-left">
+          <p>〒252-0225</p>
+          <p>神奈川県相模原市中央区緑が丘 2-38-39</p>
+        </div>
+        <div class="col-lg-6 slide-in-right">
+          <iframe class="col-12"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099.0478950392073!2d139.383229519868!3d35.54863404304715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018fdeaee360491%3A0x327206c7c53d12c8!2z44CSMjUyLTAyMjUg56We5aWI5bed55yM55u45qih5Y6f5biC5Lit5aSu5Yy657eR44GM5LiY77yS5LiB55uu77yT77yY4oiS77yT77yZIOOBv-OBqeOCiue3j-WQiOS_nemZuuS6i-WLmeaJgA!5e0!3m2!1sja!2sjp!4v1696913287065!5m2!1sja!2sjp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section class="contact pt-5">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <h2>お問い合わせ</h2>
+      </div>
+      <div class="row">
+        <div class="position-relative masked">
+          <img class="col-12 px-0" src="./img/image1.webp" alt="コンタクトフォームへ">
+          <div class="position-absolute top-50 start-50 translate-middle text-white">
+            <h3>お問い合わせフォームへ</h3>
+          </div>
+        </div>
+        <div class="col-6 position-relative masked">
+          <img class="col-12" src="./img/image2.webp" alt="メールでのお問い合せ">
+          <div class="position-absolute top-50 start-50 translate-middle text-white">
+            <h3>メールでのお問い合せ</h3>
+          </div>
+        </div>
+        <div class="col-6 position-relative masked">
+          <img class="col-12" src="./img/image3.webp" alt="お電話でのお問い合わせ">
+          <div class="position-absolute top-50 start-50 translate-middle text-white">
+            <h3>お電話でのお問い合せ</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid mt-5">
+    <div style="background-color: rgb(24, 129, 36); height: 30vh; "> <!--このスタイルは消去-->
+      footer
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
