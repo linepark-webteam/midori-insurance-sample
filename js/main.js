@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // プリローダーアニメーション
+  let preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
   // セクションの要素を取得
   const slideInRightElements = document.querySelectorAll('.slide-right-content');
   const slideInLeftElements = document.querySelectorAll('.slide-left-content');

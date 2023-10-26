@@ -7,21 +7,50 @@ body {
   font-family: 'Klee One', 'cursive', serif;
 }
 
+/* プリローダーのスタイル */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* テストコード */
 /* h2 {
   background-color:  #98FF98;
   color: #006400;
 } */
-
+/* テストコード */
 /* h2 {
   background-color:   #508370;
   color: #FFFFF0;
 } */
 
 h2 {
-  background-color:  #93C572;
-  color: #013220;
+  background-color:  #CCFFCC;
+  color: #004D40;
 }
-
 .hero {
   width: 100%;
 }
