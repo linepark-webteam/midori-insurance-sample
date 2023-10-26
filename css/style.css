@@ -4,6 +4,7 @@
 body {
   background-image: url(../img/background2.webp);
   font-family: 'Noto Serif JP', serif;
+  font-family: 'Klee One', 'cursive', serif;
 }
 .hero {
   width: 100%;
