@@ -19,6 +19,7 @@
   <!-- CSS BootStrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="./css/my-bootstrap.css"> <!-- 自作のcss -->
   <link rel="stylesheet" href="./css/style.css"> <!-- 自作のcss -->
   <link rel="stylesheet" href="./css/responsive.css"> <!-- 自作のcss -->
 </head>
@@ -41,7 +42,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./">ホーム</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./philosophy/">経営理念</a>
@@ -56,7 +57,7 @@
             <a class="nav-link" href="#">法人のお客様</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">アクセス</a>
+            <a class="nav-link" href="./access/">アクセス</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">お問い合わせ</a>
@@ -125,6 +126,7 @@
         <h3>キャンペーン</h3>
         <p class="col-12">キャンペーン情報・イベント情報などのリンクを掲載</p>
       </div>
+      <button class="btn btn-outline-success col-6 mt-5"><a href="#">キャンペーンページへ</a></button>
     </div>
   </section>
 
@@ -133,20 +135,21 @@
     <h2 class="px-2 py-2 col-12">経営理念</h2>
     <div class="container policy slide-left-content">
       <div class="row">
-        <p class="col-12">誠心誠意をもって、お客様の安心と安全に尽くす</p>
+        <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
       </div>
+        <button class="btn btn-outline-success col-6 mt-5"><a href="#">私たちについて</a></button>
     </div>
   </section>
 
   <section class="py-5">
     <!-- <div class="d-flex"> -->
     <h2 class="px-2 py-2 col-12 mb-5">商品のご紹介</h2>
-    <div class="personal-products container slide-bottom-content mb-3">
+    <div class="personal-products container mb-3">
       <div class="row d-flex">
         <div class="col-lg-6 slide-bottom-content">
           <h2 class="px-2 py-2 col-12">個人のお客様</h2>
           <p>クルマ、住まい、ケガ、さまざまなタイプの商品をラインナップ。充実した補償とサービスであなたの生活をサポートします。</p>
-          <button class="btn btn-outline-success col-12 fade-in"><a href="#">商品紹介リンク</a></button>
+          <button class="btn btn-outline-success col-12 fade-in"><a href="#">個人向け商品紹介</a></button>
         </div>
         <div class="col-lg-6 slide-right-content mb-3">
           <img class="col-12 mt-3" src="./img/image1.webp" alt="">
@@ -161,7 +164,7 @@
         <div class="col-lg-6 slide-right-content">
           <h2 class="px-2 py-2 col-12">法人のお客様</h2>
           <p>ビジネスシーンに応じたさまざまなタイプの商品をラインナップ。充実した補償とサービスで貴社の事業をサポートします。</p>
-          <button class="btn btn-outline-success col-12"><a href="#">商品紹介リンク</a></button>
+          <button class="btn btn-outline-success col-12"><a href="#">法人向け商品紹介</a></button>
         </div>
         <div class="col-lg-6 slide-bottom-content">
           <img class="col-12 mt-3" src="./img/image2.webp" alt="">
@@ -195,12 +198,14 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="position-relative masked">
-          <img class="col-12 px-0" src="./img/contact1.webp" alt="コンタクトフォームへ">
-          <div class="position-absolute top-50 start-50 translate-middle text-white">
-            <h3>お問い合わせフォームへ</h3>
+        <a href="./contact/">
+          <div class="position-relative masked">
+            <img class="col-12 px-0" src="./img/contact1.webp" alt="コンタクトフォームへ">
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3 class="display-4">お問い合わせフォームへ</h3>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="col-6 position-relative masked">
           <img class="col-12" src="./img/image2.webp" alt="メールでのお問い合せ">
           <div class="position-absolute top-50 start-50 translate-middle text-white">
