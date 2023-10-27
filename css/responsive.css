@@ -1,0 +1,13 @@
+@media screen and (max-width: 960px) {
+
+.carousel-fixed-text {
+  background-color: rgba(0, 0, 0, .3);
+}
+.carousel-fixed-text p {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+  font-weight: 600;
+}
+.contact h3 {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+}
+}

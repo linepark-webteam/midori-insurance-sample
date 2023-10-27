@@ -7,6 +7,11 @@ body {
   font-family: 'Klee One', 'cursive', serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* プリローダーのスタイル */
 #preloader {
   position: fixed;
@@ -37,16 +42,19 @@ body {
 
 /* テストコード */
 /* h2 {
+  font-weight: 600;
   background-color:  #98FF98;
   color: #006400;
 } */
 /* テストコード */
 /* h2 {
+  font-weight: 600;
   background-color:   #508370;
   color: #FFFFF0;
 } */
 
 h2 {
+  font-weight: 600;
   background-color:  #CCFFCC;
   color: #004D40;
 }
