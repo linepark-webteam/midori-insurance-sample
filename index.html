@@ -22,6 +22,14 @@
   <link rel="stylesheet" href="./css/my-bootstrap.css"> <!-- 自作のcss -->
   <link rel="stylesheet" href="./css/style.css"> <!-- 自作のcss -->
   <link rel="stylesheet" href="./css/responsive.css"> <!-- 自作のcss -->
+  <script>
+    window.addEventListener('load', function() {
+    setTimeout(function() {
+        let preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    }, 3000); // 3000ミリ秒 = 3秒
+});
+  </script>
 </head>
 
 <body>
@@ -48,19 +56,19 @@
             <a class="nav-link" href="./philosophy/">経営理念</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">代表プロフィール</a>
+            <a class="nav-link" href="./profile/">代表プロフィール</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">個人のお客様</a>
+            <a class="nav-link" href="./personal-products/">個人のお客様</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">法人のお客様</a>
+            <a class="nav-link" href="./corporation-products/">法人のお客様</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./access/">アクセス</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">お問い合わせ</a>
+            <a class="nav-link" href="./contact/">お問い合わせ</a>
           </li>
         </ul>
       </div>
@@ -120,34 +128,34 @@
 
   <!-- お知らせ -->
   <section class="pb-5">
-    <h2 class="px-2 py-2 col-12">お知らせ</h2>
+    <h2 class="px-2 py-2 col-12 heading">お知らせ</h2>
     <div class="container slide-right-content">
       <div class="row">
         <h3>キャンペーン</h3>
         <p class="col-12">キャンペーン情報・イベント情報などのリンクを掲載</p>
       </div>
-      <button class="btn btn-outline-success col-6 mt-5"><a href="#">キャンペーンページへ</a></button>
+      <button class="btn btn-outline-success col-lg-6 mt-5"><a href="#">キャンペーンページへ</a></button>
     </div>
   </section>
 
   <!-- 経営理念 -->
   <section class="py-5">
-    <h2 class="px-2 py-2 col-12">経営理念</h2>
+    <h2 class="px-2 py-2 col-12 heading">経営理念</h2>
     <div class="container policy slide-left-content">
       <div class="row">
         <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
       </div>
-        <button class="btn btn-outline-success col-6 mt-5"><a href="#">私たちについて</a></button>
+        <button class="btn btn-outline-success col-lg-6 mt-5"><a href="#">私たちについて</a></button>
     </div>
   </section>
 
   <section class="py-5">
     <!-- <div class="d-flex"> -->
-    <h2 class="px-2 py-2 col-12 mb-5">商品のご紹介</h2>
+    <h2 class="px-2 py-2 col-12 mb-5 heading">商品のご紹介</h2>
     <div class="personal-products container mb-3">
       <div class="row d-flex">
         <div class="col-lg-6 slide-bottom-content">
-          <h2 class="px-2 py-2 col-12">個人のお客様</h2>
+          <h2 class="px-2 py-2 col-12 heading">個人のお客様</h2>
           <p>クルマ、住まい、ケガ、さまざまなタイプの商品をラインナップ。充実した補償とサービスであなたの生活をサポートします。</p>
           <button class="btn btn-outline-success col-12 fade-in"><a href="#">個人向け商品紹介</a></button>
         </div>
@@ -162,7 +170,7 @@
     <div class="corporation-products container">
       <div class="row flex-row-reverse">
         <div class="col-lg-6 slide-right-content">
-          <h2 class="px-2 py-2 col-12">法人のお客様</h2>
+          <h2 class="px-2 py-2 col-12 heading">法人のお客様</h2>
           <p>ビジネスシーンに応じたさまざまなタイプの商品をラインナップ。充実した補償とサービスで貴社の事業をサポートします。</p>
           <button class="btn btn-outline-success col-12"><a href="#">法人向け商品紹介</a></button>
         </div>
@@ -175,7 +183,7 @@
 
   <!-- access -->
   <section class="py-5">
-    <h2 class="px-2 py-2 col-12">アクセス</h2>
+    <h2 class="px-2 py-2 col-12 heading">アクセス</h2>
     <div class="container row d-flex">
       <div class="col-lg-6 slide-left-content">
         <p>〒252-0225</p>
@@ -194,7 +202,7 @@
   <!-- contact -->
   <section class="contact pt-5">
     <div class="d-flex justify-content-center">
-      <h2 class="px-2 py-2 col-12 align-center">お問い合わせ</h2>
+      <h2 class="px-2 py-2 col-12 align-center heading">お問い合わせ</h2>
     </div>
     <div class="container">
       <div class="row">
@@ -223,12 +231,19 @@
     </div>
   </section>
 
-  <footer class="container-fluid mt-5">
-    <div style="background-color: rgb(24, 129, 36); height: 30vh; "> <!--このスタイルは消去-->
-      footer
+  <footer class="container-fluid d-flex justify-content-center mt-5">
+    <div class="container row d-flex justify-content-around">
+      <div class="col-lg-4 align-content-center">
+        test
+      </div>
+      <div class="col-lg-4">
+        test
+      </div>
+      <div class="col-lg-4">
+        test
+      </div>
     </div>
   </footer>
-
 
 
   <!-- Bootstrap JS and Popper.js -->

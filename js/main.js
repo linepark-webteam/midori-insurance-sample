@@ -1,14 +1,16 @@
+console.log('test');
+
 document.addEventListener('DOMContentLoaded', function() {
   // プリローダーアニメーション
   let preloader = document.getElementById('preloader');
-    preloader.style.display = 'none';
+      preloader.style.display = 'none';
   // セクションの要素を取得
   const slideInRightElements = document.querySelectorAll('.slide-right-content');
   const slideInLeftElements = document.querySelectorAll('.slide-left-content');
   const slideInBottomElements = document.querySelectorAll('.slide-bottom-content');
   const slideInTopElements = document.querySelectorAll('.slide-top-content');
   const slideInElements = document.querySelectorAll('.slide-in');
-  const fadeInElements = document.querySelectorAll('.fade-in');
+  const fadeInElements = document.querySelectorAll('.fade-in-content');
 
   // アニメーションをトリガーする関数
   function triggerAnimation(element, className) {
