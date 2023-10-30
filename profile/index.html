@@ -19,15 +19,18 @@
   <!-- CSS BootStrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/style.css"> <!-- 自作のcss -->
-  <link rel="stylesheet" href="../css/responsive.css"> <!-- 自作のcss -->
+
+  <link rel="stylesheet" href="../css/my-bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
-    <!-- プリローダー -->
-    <div id="preloader">
-      <div class="leaf-loader"></div>
+  <!-- プリローダー -->
+  <div id="preloader">
+    <div class="leaf-loader"></div>
   </div>
+
   <h1 class="d-flex justify-content-center">みどり総合保険事務所<!-- 名刺の画像等に変更？ --></h1>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -67,38 +70,47 @@
 
   <section class="hero mb-5">
     <div class="image-section position-relative masked">
-      <img src="../img/image6.jpg" class="d-block w-100" alt="Image 1">
+      <img src="../img/profile1.webp" class="d-block w-100" alt="代表プロフィール">
       <div class="position-absolute top-50 start-50 translate-middle text-white">
-        <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="hero-fixed-text d-flex flex-column align-items-center justify-content-center">
           <h3>Profile</h3>
           <h2>代表プロフィール</h2>
-          </div>
         </div>
       </div>
+    </div>
   </section>
 
   <section class="mb-5 py-5">
     <div class="container">
       <div class="mb-3">
-        <div class="section-header mission-statement-header mb-5 d-flex flex-column align-items-center">
-          <h2 >代表プロフィール</h2>
+        <div class="mb-5 d-flex flex-column align-items-center">
+          <div  class="section-header col-lg-4 slide-bottom-content">
+          <h2>代表プロフィール</h2>
           <span>― Plofile ―</span>
         </div>
-        <div class="mission-statement-desc mb-5 d-flex flex-column align-items-center">
-        <h4>当事務所では以下の6つの経営理念を掲げております。</h4>
-      </div>
-      <div class="row">
-        <div class="d-flex flex-column align-items-center">
-          <div class="col-8">
-            <p class="slide-in">1.誠心誠意をもって、お客様の安心と安全に尽くす</p>
-            <p class="slide-in">2.お客様のご要望に迅速にお応えする</p>
-            <p class="slide-in">3.お客様に最適なプランを提案し、お客様のお役に立つことを最高の歓びとする</p>
-            <p class="slide-in">4.地域社会に貢献し、ルールに沿った保険募集をする</p>
-            <p class="slide-in">5.保険のプロとしての誇りを持ち、常に勉強し、スキルアップに努める</p>
-            <p class="slide-in">6.保険商品という社会性・公共性に鑑み、無理のない行き届いたサービスを行う</p>
+        </div>
+        <div class="row d-flex flex-row-reverse justify-content-center">
+          <div class="col-lg-6 slide-left-content mb-3">
+            <img src="../img/*" alt="プロフィール画像">
           </div>
+          <div class="col-lg-6 slide-right-content">
+            <div class="mb-3">
+              <h4>代表取締役</h4>
+              <h3>濱島 一志</h3>
             </div>
-      </div>
+            <h4>生年月日：</h4>
+            <h4>出身地：</h4>
+            <h4>趣味：</h4>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="mb-3">
+        <div class="content mb-5 d-flex flex-column align-items-start">
+          <h2>ご挨拶</h2>
+        </div>
+    </div>
     </div>
   </section>
 

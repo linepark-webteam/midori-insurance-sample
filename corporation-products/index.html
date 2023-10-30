@@ -19,11 +19,17 @@
   <!-- CSS BootStrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/style.css"> <!-- 自作のcss -->
-  <link rel="stylesheet" href="../css/responsive.css"> <!-- 自作のcss -->
+  <link rel="stylesheet" href="../css/my-bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
+    <!-- プリローダー -->
+    <div id="preloader">
+      <div class="leaf-loader"></div>
+  </div>
+
   <h1 class="d-flex justify-content-center">みどり総合保険事務所<!-- 名刺の画像等に変更？ --></h1>
 
   <!-- Navbar -->
@@ -77,13 +83,16 @@
   <section class="mb-5 py-5">
     <div class="container">
       <div class="mb-3">
-        <div class="section-header mission-statement-header mb-5 d-flex flex-column align-items-center">
+        <div class="mb-5 d-flex flex-column align-items-center">
+          <div  class="section-header col-4 slide-bottom-content">
           <h2 >法人のお客様向け商品</h2>
           <span>― Corporation Products ―</span>
+        </div>
         </div>
         <div class="mb-5 d-flex flex-column align-items-center">
         <p class="h4">ビジネスシーンに応じたさまざまなタイプの商品をラインナップ。</p>
           <p class="h4">充実した補償とサービスで貴社の事業をサポートします。</p>
+        <button class="btn btn-outline-success col-12"><a href="./corporation-products/">法人向け商品紹介</a></button>
       </div>
 
     </div>

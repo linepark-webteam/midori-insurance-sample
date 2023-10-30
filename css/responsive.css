@@ -10,4 +10,24 @@
 .contact h3 {
   font-size: calc(16px + 8 * ((100vw - 320px) / 640));
 }
+
+/* 下層ページ 画像上の文字 */
+.hero-fixed-text h3{
+  font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+  font-weight: 600;
+}
+.hero-fixed-text h2{
+  font-size: calc(16px + 4 * ((100vw - 320px) / 640));
+  font-weight: 600;
+}
+.section-header h2{
+  font-size: calc(16px + 4 * ((100vw - 320px) / 640));
+  font-weight: 600;
+}
+.hero-fixed-text span{
+  font-size: calc(16px + 4 * ((100vw - 320px) / 640));
+  font-weight: 600;
+}
+
+
 }
