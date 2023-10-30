@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const slideInLeftElements = document.querySelectorAll('.slide-left-content');
   const slideInBottomElements = document.querySelectorAll('.slide-bottom-content');
   const slideInTopElements = document.querySelectorAll('.slide-top-content');
-  const slideInElements = document.querySelectorAll('.slide-in');
   const fadeInElements = document.querySelectorAll('.fade-in-content');
 
   // アニメーションをトリガーする関数
@@ -38,9 +37,6 @@ window.addEventListener('scroll', function() {
   });
   slideInBottomElements.forEach(element => {
     triggerAnimation(element, 'slide-in-bottom');
-  });
-  slideInElements.forEach(element => {
-    triggerAnimation(element, 'slide-in');
   });
   fadeInElements.forEach(element => {
     triggerAnimation(element, 'fade-in');
