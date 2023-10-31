@@ -30,27 +30,42 @@ a:hover {
   justify-content: center;
 }
 
-.leaf-loader {
+/* .leaf-loader {
   width: 60px;
   height: 60px;
-  background: url('../img/leaf.svg') no-repeat center center;
+  background: url('../img/leaf.png') no-repeat center center;
   background-size: contain;
   animation: spinLeaf 2s linear infinite;
 }
-
 @keyframes spinLeaf {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+} */
+
+/* ボールが跳ねるアニメーション */
+.ball-loader {
+  width: 200px;
+  height: 200px;
+  background: url('../img/ball.webp') no-repeat center center;
+  background-size: contain;
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
-
-/* テストコード */
+/* 色見本用テストコード */
 /* h2 {
   font-weight: 600;
   background-color:  #98FF98;
   color: #006400;
 } */
-/* テストコード */
+/* 色見本用テストコード */
 /* h2 {
   font-weight: 600;
   background-color:   #508370;

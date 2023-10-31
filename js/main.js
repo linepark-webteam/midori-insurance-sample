@@ -1,9 +1,31 @@
 console.log('test');
 
-document.addEventListener('DOMContentLoaded', function() {
+
+// ページの全コンテンツがロードされた後にプリローダーを非表示にする
+window.onload = function() {
   // プリローダーアニメーション
   let preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
+  preloader.style.display = 'none';
+};
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // プリローダーアニメーション
+    let preloader = document.getElementById('preloader');
+
+      // ページの全ての要素が読み込まれた後にプリローダーを非表示にする
+  window.onload = function() {
+    preloader.style.display = 'none';
+  };
+
+    // ＊テスト用コード＊3秒後に要素が読み込まれた後にプリローダーを非表示にする
+    // window.onload = function() {
+    //   setTimeout(function() {
+    //     preloader.style.display = 'none';
+    //   }, 3000); // 3秒後に非表示
+    // };
+
   // セクションの要素を取得
   const slideInRightElements = document.querySelectorAll('.slide-right-content');
   const slideInLeftElements = document.querySelectorAll('.slide-left-content');
