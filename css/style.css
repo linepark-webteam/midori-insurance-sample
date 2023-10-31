@@ -162,6 +162,12 @@ footer {
   animation-fill-mode: forwards;
 }
 
+/* profile */
+.greet {
+  /* border-bottom: 3px solid rgba(13, 114, 11, .5); */
+  border-top: 3px solid rgba(13, 114, 11, .5);
+}
+
 /* AnimationsCss */
 /* 初期状態として非表示にする */
 .slide-right-content,

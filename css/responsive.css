@@ -1,5 +1,13 @@
 @media screen and (max-width: 960px) {
 
+.brand {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+  margin: 0 auto;
+}
+.navbar-brand {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+}
+
 .carousel-fixed-text {
   background-color: rgba(0, 0, 0, .3);
 }
@@ -20,6 +28,7 @@
   font-size: calc(16px + 4 * ((100vw - 320px) / 640));
   font-weight: 600;
 }
+/* 下層ページ タイトルの文字サイズ */
 .section-header h2{
   font-size: calc(16px + 4 * ((100vw - 320px) / 640));
   font-weight: 600;
@@ -27,6 +36,13 @@
 .hero-fixed-text span{
   font-size: calc(16px + 4 * ((100vw - 320px) / 640));
   font-weight: 600;
+}
+
+.content-text {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+}
+.content-text-lg {
+  font-size: calc(18px + 2 * ((100vw - 320px) / 640));
 }
 
 
