@@ -45,5 +45,9 @@
   font-size: calc(18px + 2 * ((100vw - 320px) / 640));
 }
 
+.copyright {
+  height: 5vh;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 640));
+}
 
 }
