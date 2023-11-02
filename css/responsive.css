@@ -47,7 +47,7 @@
 
 .copyright {
   height: 5vh;
-  font-size: calc(12px + 2 * ((100vw - 320px) / 640));
+  font-size: calc(8px + 2 * ((100vw - 320px) / 640));
 }
 
 }
