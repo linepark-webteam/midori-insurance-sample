@@ -30,16 +30,16 @@
 }
 /* 下層ページ タイトルの文字サイズ */
 .section-header h2{
-  font-size: calc(16px + 4 * ((100vw - 320px) / 640));
+  font-size: calc(14px + 2 * ((100vw - 320px) / 640));
   font-weight: 600;
 }
 .section-header span{
-  font-size: calc(12px + 2 * ((100vw - 320px) / 640));
+  font-size: calc(10px + 2 * ((100vw - 320px) / 640));
   font-weight: 600;
 }
 
 .content-text {
-  font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+  font-size: calc(12px + 2 * ((100vw - 320px) / 640));
 }
 .content-text-lg {
   font-size: calc(18px + 2 * ((100vw - 320px) / 640));
