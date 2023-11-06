@@ -181,6 +181,15 @@ footer {
   font-size: 16px;
 }
 
+/* contact */
+.form-group a {
+  color: rgb(76, 76, 220);
+  font-weight: 600;
+}
+.form-group a:hover {
+  color: #4a2554;
+  font-weight: 600;
+} 
 /* AnimationsCss */
 /* 初期状態として非表示にする */
 .slide-right-content,
