@@ -50,4 +50,23 @@
   font-size: calc(8px + 2 * ((100vw - 320px) / 640));
 }
 
+/* CONTACT */
+.form-group label{
+  font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+  vertical-align: text-bottom;
+}
+.form-group input{
+  font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+}
+/* ラジオボタン項目 */
+.form-check-inline {
+  font-size: calc(4px + 2 * ((100vw - 320px) / 640));
+}
+.form-group textarea{
+  font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+}
+/* 送信ボタン */
+button[type="submit"] {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 640));
+}
 }

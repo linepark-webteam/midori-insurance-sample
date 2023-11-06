@@ -30,17 +30,25 @@ a:hover {
   justify-content: center;
 }
 
-/* .leaf-loader {
+/* 葉っぱが回転するアニメーション */
+.leaf-loader {
   width: 60px;
   height: 60px;
   background: url('../img/leaf.png') no-repeat center center;
   background-size: contain;
-  animation: spinLeaf 2s linear infinite;
+  animation: spin3dLeaf 2s linear infinite;
+  transform-style: preserve-3d; /* 3D変形を有効化 */
 }
-@keyframes spinLeaf {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */
+
+@keyframes spin3dLeaf {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg); /* X軸とY軸の周りに回転 */
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg); /* 360度回転 */
+  }
+}
+
 
 /* ボールが跳ねるアニメーション */
 .ball-loader {
@@ -184,12 +192,15 @@ footer {
 /* contact */
 .form-group a {
   color: rgb(76, 76, 220);
+  text-decoration: underline rgb(76, 76, 220);
   font-weight: 600;
 }
 .form-group a:hover {
   color: #4a2554;
   font-weight: 600;
-} 
+}
+
+
 /* AnimationsCss */
 /* 初期状態として非表示にする */
 .slide-right-content,
