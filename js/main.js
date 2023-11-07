@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sectionTop = element.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    if (sectionTop <= (windowHeight / 2)) {
+    if (sectionTop <= (windowHeight)) {
         element.classList.add(className);
         element.classList.add('visible');
     }
