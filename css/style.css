@@ -16,7 +16,7 @@ a:hover {
   color:white
 }
 
-/* プリローダーのスタイル */
+/* プリローダー総合のスタイル */
 #preloader {
   position: fixed;
   left: 0;
@@ -38,6 +38,29 @@ a:hover {
   background-size: contain;
   animation: spin3dLeaf 2s linear infinite;
   transform-style: preserve-3d; /* 3D変形を有効化 */
+}
+
+/* 進行状況のリング */
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* リングの大きさを葉っぱより大きくする */
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #5ad6ff; /* リングの色と太さ */
+  border-top-color: #3e9; /* 進行状況を示す色 */
+  animation: spinProgress 2s linear infinite; /* ロード中にゆっくり回転させる */
+}
+
+@keyframes spinProgress {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 @keyframes spin3dLeaf {
