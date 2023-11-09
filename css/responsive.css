@@ -44,7 +44,7 @@
   font-size: calc(14px + 2 * ((100vw - 320px) / 640));
   font-weight: 600;
 }
-.section-header span{
+.section-header h6{
   font-size: calc(10px + 2 * ((100vw - 320px) / 640));
   font-weight: 600;
 }
