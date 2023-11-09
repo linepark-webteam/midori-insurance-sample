@@ -148,6 +148,10 @@ footer a:hover::after {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+.policy-list {
+  list-style: none;
+}
+
 
 /* profile */
 .greet {
