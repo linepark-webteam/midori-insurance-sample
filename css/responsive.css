@@ -60,7 +60,7 @@
 
   /* CONTACT */
   .form-group label {
-    font-size: calc(12px + 2 * ((100vw - 320px) / 879));
+    font-size: calc(10px + 2 * ((100vw - 320px) / 879));
     vertical-align: text-bottom;
   }
   .form-group input {
