@@ -16,27 +16,37 @@ a:hover {
   color:white
 }
 
-
-
-
-/* 色見本用テストコード */
-/* h2 {
-  font-weight: 600;
-  background-color:  #98FF98;
-  color: #006400;
-} */
-/* 色見本用テストコード */
-/* h2 {
-  font-weight: 600;
-  background-color:   #508370;
-  color: #FFFFF0;
-} */
+/* ナビゲーションメニュー */
+.navbar-nav .nav-link:hover {
+  background-color: #299329;
+  color: #fff;
+}
+/* ドロップダウンメニューのリンク */
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+  background-color: #299329;
+  color: #fff;
+}
 
 .heading {
   font-weight: 600;
   background-color:  #CCFFCC;
   color: #004D40;
 }
+
+/* 色見本用テストコード */
+/* .heading {
+  font-weight: 600;
+  background-color:  #98FF98;
+  color: #006400;
+} */
+/* 色見本用テストコード */
+/* .heading {
+  font-weight: 600;
+  background-color:   #508370;
+  color: #FFFFF0;
+} */
+
 .hero {
   width: 100%;
 }

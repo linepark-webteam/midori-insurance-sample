@@ -1,0 +1,17 @@
+/* ヘッダーメニュー文字サイズ
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+}
+/* ヘッダーメニューの992px以上の文字サイズ */
+/* @media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: calc(10px + 2 * ((100vw - 992px) / 207));
+    }
+  } */
+
+  /* ヘッダーメニューの1199px以下の文字サイズ */
+  /* @media screen and (min-width: 1199px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: calc(10px + 2 * ((100vw - 992px) / 207));
+    }
+  } */

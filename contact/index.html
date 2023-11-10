@@ -36,7 +36,7 @@
       <div class="leaf-loader"></div>
   </div>
 
-  <h1 class="brand d-md-flex justify-content-center">株式会社みどり総合保険事務所<!-- 名刺の画像等に変更？ --></h1>
+  <h1 class="brand d-lg-flex justify-content-center">株式会社みどり総合保険事務所<!-- 名刺の画像等に変更？ --></h1>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
@@ -50,20 +50,24 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../">ホーム</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../philosophy/">経営理念</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              会社情報
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../philosophy/">経営理念</a></li>
+              <li><a class="dropdown-item" href="../company/">会社概要</a></li>
+              <li><a class="dropdown-item" href="../profile/">代表プロフィール</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../company/">会社概要</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../profile/">代表プロフィール</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../personal-products/">個人のお客様</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../corporation-products/">法人のお客様</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              商品紹介
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+              <li><a class="dropdown-item" href="../personal-products/">個人のお客様</a></li>
+              <li><a class="dropdown-item" href="../corporation-products/">法人のお客様</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../access/">アクセス</a>
@@ -92,7 +96,7 @@
     <div class="container">
       <div class="mb-3">
         <div class="mb-5 d-flex flex-column align-items-center">
-          <div class="section-header col-md-4">
+          <div class="section-header col-lg-4">
             <h2>お問合せ</h2>
             <h6>― Contact ―</h6>
           </div>
@@ -100,22 +104,22 @@
         <div class="container row">
           <form>
             <!-- お問合わせ項目 -->
-            <div class="form-group col-12 d-md-flex ">
-              <label for="inquiryType" class="col-md-3 mb-2 me-5">お問合わせ項目　<span
+            <div class="form-group col-12 d-lg-flex ">
+              <label for="inquiryType" class="col-lg-3 mb-2 me-5">お問合わせ項目　<span
                   class="badge text-bg-success">必須</span></label>
               <!-- <div class="row"> -->
-              <div class="col-12 col-md-9">
-                <div class="form-check form-check-inline col-md-4">
+              <div class="d-lg-flex col-lg-9">
+                <div class="form-check form-check-block align-items-center col-lg-4">
                   <input class="form-check-input" type="radio" name="inquiryType" id="corporate" value="corporate"
                     required>
                   <label class="form-check-label" for="corporate">法人のお客様</label>
                 </div>
-                <div class="form-check form-check-inline col-md-4">
+                <div class="form-check form-check-block align-items-center col-lg-4">
                   <input class="form-check-input" type="radio" name="inquiryType" id="individual" value="individual"
                     required>
                   <label class="form-check-label" for="individual">個人のお客様</label>
                 </div>
-                <div class="form-check form-check-inline col-md-4">
+                <div class="form-check form-check-block align-items-center col-lg-4">
                   <input class="form-check-input" type="radio" name="inquiryType" id="other" value="other" required>
                   <label class="form-check-label" for="other">その他</label>
                 </div>
@@ -123,40 +127,40 @@
               </div>
 
             <!-- お名前 -->
-            <div class="form-group d-md-flex mt-3">
-              <label for="name" class="col-md-3 mb-2 me-5">お名前　 <span class="badge text-bg-success">必須</span></label>
+            <div class="form-group d-lg-flex mt-3">
+              <label for="name" class="col-lg-3 mb-2 me-5">お名前　 <span class="badge text-bg-success">必須</span></label>
               <input type="text" class="form-control" id="name" placeholder="お名前を入力してください" required>
             </div>
 
             <!-- 会社名 -->
-            <div class="form-group d-md-flex mt-3">
-              <label for="companyName" class="col-md-3 mb-2  me-5">会社名　<span class="badge text-bg-secondary">任意</span></label>
+            <div class="form-group d-lg-flex mt-3">
+              <label for="companyName" class="col-lg-3 mb-2  me-5">会社名　<span class="badge text-bg-secondary">任意</span></label>
               <input type="text" class="form-control" id="companyName" placeholder="会社名を入力してください">
             </div>
 
             <!-- メールアドレス -->
-            <div class="form-group d-md-flex mt-3">
-              <label for="email" class="col-md-3 mb-2 me-5">メールアドレス　<span class="badge text-bg-success">必須</span></label>
+            <div class="form-group d-lg-flex mt-3">
+              <label for="email" class="col-lg-3 mb-2 me-5">メールアドレス　<span class="badge text-bg-success">必須</span></label>
               <input type="email" class="form-control" id="email" placeholder="メールアドレスを入力してください" required>
             </div>
 
             <!-- 確認用メールアドレス -->
-            <div class="form-group d-md-flex mt-3">
-              <label for="confirmEmail" class="col-md-3 mb-2 me-5">確認用メールアドレス　<span
+            <div class="form-group d-lg-flex mt-3">
+              <label for="confirmEmail" class="col-lg-3 mb-2 me-5">確認用メールアドレス　<span
                   class="badge text-bg-success">必須</span></label>
               <input type="email" class="form-control" id="confirmEmail" placeholder="確認用メールアドレスを入力してください" required>
             </div>
 
             <!-- 担当者からの折り返し方法 -->
-            <div class="form-group d-md-flex mt-3">
-              <label class="col-md-3 mb-2 me-5">担当者からの折り返し方法　<span class="badge text-bg-success">必須</span></label>
+            <div class="form-group d-lg-flex mt-3">
+              <label class="col-lg-3 mb-2 me-5">担当者からの折り返し方法　<span class="badge text-bg-success">必須</span></label>
               <div>
-                <div class="form-check form-check-inline">
+                <div class="form-check align-items-center form-check-block">
                   <input class="form-check-input" type="radio" name="callbackPreference" id="contactByEmail"
                     value="email" required>
                   <label class="form-check-label" for="contactByEmail">メールでの連絡希望</label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check align-items-center form-check-block">
                   <input class="form-check-input" type="radio" name="callbackPreference" id="contactByPhone"
                     value="phone" required>
                   <label class="form-check-label" for="contactByPhone">電話での連絡希望</label>
@@ -165,13 +169,13 @@
             </div>
 
             <!-- お問合せ内容 -->
-            <div class="form-group d-md-flex mt-3">
-              <label for="inquiry" class="col-md-3 mb-2 me-5">お問合せ内容　<span class="badge text-bg-success">必須</span></label>
+            <div class="form-group d-lg-flex mt-3">
+              <label for="inquiry" class="col-lg-3 mb-2 me-5">お問合せ内容　<span class="badge text-bg-success">必須</span></label>
               <textarea class="form-control" id="inquiry" rows="4" placeholder="お問い合わせ内容を入力してください" required></textarea>
             </div>
 
             <!-- 「個人情報保護方針」 -->
-            <div class="form-group form-check d-flex my-5">
+            <div class="form-group form-check d-flex justify-content-center my-5">
               <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
               <label class="form-check-label" for="privacyPolicy"><a
                   href="../privacy-policy/">「個人情報保護方針」</a>に同意の上、チェックを入れて送信してください。 <span
@@ -190,12 +194,12 @@
   <footer class="container-fluid d-flex justify-content-center mt-5 py-3">
     <div class="container">
       <div class="row">
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-lg-4">
       <img src="../img/midori-insurance.webp" alt="logo" class="col-12">
     </div>
     </div>
     <div class="row d-flex justify-content-around">
-      <div class="col-md-4 align-content-center">
+      <div class="col-lg-4 align-content-center">
         <p class="content-text">株式会社みどり総合保険事務所</p>
         <p class="content-text">
           〒252-0225<br>
@@ -206,7 +210,7 @@
             href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a
             href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <p class="content-text"><a href="../philosophy/">経営理念</a></p>
         <p class="content-text"><a href="../company/">会社概要</a></p>
         <p class="content-text"><a href="../profile/">代表プロフィール</a></p>
@@ -214,7 +218,7 @@
         <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
         <p class="content-text"><a href="../access/">アクセス</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <p class="content-text"><a href="../contact/">お問い合わせ</a></p>
         <p class="content-text"><a href="../privacy-policy/">個人情報保護方針</a></p>
       </div>

@@ -11,7 +11,6 @@
     height: auto;
   }
 
-
   .carousel-fixed-text {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -20,7 +19,7 @@
     font-weight: 600;
   }
   .contact h3 {
-    font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+    font-size: calc(14px + 8 * ((100vw - 320px) / 640));
   }
 
   /* 下層ページ 画像上の文字 */
@@ -47,7 +46,7 @@
   }
 
   .content-text {
-    font-size: calc(12px + 2 * ((100vw - 320px) / 640));
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
   }
   .content-text-lg {
     font-size: calc(18px + 2 * ((100vw - 320px) / 640));
@@ -55,23 +54,23 @@
 
   .copyright {
     height: 5vh;
-    font-size: calc(8px + 2 * ((100vw - 320px) / 640));
+    font-size: calc(12px + 2 * ((100vw - 320px) / 640));
   }
 
   /* CONTACT */
   .form-group label {
-    font-size: calc(10px + 2 * ((100vw - 320px) / 879));
+    font-size: calc(14px + 2 * ((100vw - 320px) / 879));
     vertical-align: text-bottom;
   }
   .form-group input {
-    font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
   }
   /* ラジオボタン項目 */
-  .form-check-inline {
-    font-size: calc(4px + 2 * ((100vw - 320px) / 640));
+  .form-check-block {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
   }
   .form-group textarea {
-    font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
   }
   /* 送信ボタン */
   button[type="submit"] {
@@ -89,20 +88,3 @@
   }
 }
 
-/* ヘッダーメニュー文字サイズ */
-.navbar-expand-lg .navbar-nav .nav-link {
-  font-size: calc(16px + 8 * ((100vw - 320px) / 640));
-}
-/* ヘッダーメニューの992px以上の文字サイズ */
-@media screen and (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: calc(10px + 2 * ((100vw - 992px) / 207));
-    }
-  }
-
-  /* ヘッダーメニューの1199px以下の文字サイズ */
-  @media screen and (min-width: 1199px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-      font-size: calc(10px + 2 * ((100vw - 992px) / 207));
-    }
-  }
