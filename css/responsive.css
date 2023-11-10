@@ -65,6 +65,10 @@
   .form-group input {
     font-size: calc(12px + 2 * ((100vw - 320px) / 640));
   }
+  .form-group input[type="checkbox"] {
+    width: 20px;
+    margin-left: 0;
+  }
   /* ラジオボタン項目 */
   .form-check-block {
     font-size: calc(14px + 2 * ((100vw - 320px) / 640));
