@@ -8,6 +8,10 @@ body {
   font-family: 'Noto Serif JP', serif;
   font-family: 'Klee One', 'cursive', serif;
 }
+h1 {
+  background-color: rgba(209, 243, 211, .5);
+  margin: 0;
+}
 
 /* TOPページ及び、共通のスタイル */
 

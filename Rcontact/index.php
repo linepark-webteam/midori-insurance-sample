@@ -129,12 +129,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="leaf-loader"></div>
   </div>
 
-  <h1 class="brand d-flex justify-content-center">株式会社みどり総合保険事務所<!-- 名刺の画像等に変更？ --></h1>
+  <h1 class="brand d-flex justify-content-center py-1"><img src="../img/logo.webp" alt="株式会社みどり総合保険事務所"></h1>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="../"><img src="../img/midori-insurance.webp" alt="株式会社みどり総合保険事務所"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">株式会社みどり総合保険事務所</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -321,32 +322,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container">
       <div class="row">
         <div class="col-6 col-lg-4">
-          <img src="../img/midori-insurance.webp" alt="logo" class="col-12">
-        </div>
+          <img src="../img/logo.webp" alt="logo" class="col-12 py-3">
+    </div>
+    </div>
+    <div class="row d-flex justify-content-around">
+      <div class="col-lg-4 align-content-center">
+        <p class="content-text">株式会社みどり総合保険事務所</p>
+        <p class="content-text">
+          〒252-0225<br>
+          神奈川県相模原市中央区<br>
+          緑が丘2丁目38-39<br>
+        </p>
+        <p class="content-text">TEL: <a href="tel:042-769-7735">042-769-7735</a><br>FAX: 042-769-7734<br>MOBILE: <a
+            href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a
+            href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
       </div>
-      <div class="row d-flex justify-content-around">
-        <div class="col-lg-4 align-content-center">
-          <p class="content-text">株式会社みどり総合保険事務所</p>
-          <p class="content-text">
-            〒252-0225<br>
-            神奈川県相模原市中央区<br>
-            緑が丘2丁目38-39<br>
-          </p>
-          <p class="content-text">TEL: <a href="tel:042-769-7735">042-769-7735</a><br>FAX: 042-769-7734<br>MOBILE: <a href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
-        </div>
-        <div class="col-lg-4">
-          <p class="content-text"><a href="../philosophy/">経営理念</a></p>
-          <p class="content-text"><a href="../company/">会社概要</a></p>
-          <p class="content-text"><a href="../profile/">代表プロフィール</a></p>
-          <p class="content-text"><a href="../personal-products/">個人のお客様</a></p>
-          <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
-          <p class="content-text"><a href="../access/">アクセス</a></p>
-        </div>
-        <div class="col-lg-4">
-          <p class="content-text"><a href="../contact/">お問い合わせ</a></p>
-          <p class="content-text"><a href="../privacy-policy/">個人情報保護方針</a></p>
-        </div>
+      <div class="col-lg-4">
+        <p class="content-text"><a href="../philosophy/">経営理念</a></p>
+        <p class="content-text"><a href="../company/">会社概要</a></p>
+        <p class="content-text"><a href="../profile/">代表プロフィール</a></p>
+        <p class="content-text"><a href="../personal-products/">個人のお客様</a></p>
+        <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
+        <p class="content-text"><a href="../access/">アクセス</a></p>
       </div>
+      <div class="col-lg-4">
+        <p class="content-text"><a href="../contact/">お問い合わせ</a></p>
+        <p class="content-text"><a href="../privacy-policy/">個人情報保護方針</a></p>
+      </div>
+    </div>
     </div>
   </footer>
   <div class="copyright container-fluid row justify-content-center align-content-center">
