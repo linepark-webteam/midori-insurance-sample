@@ -78,9 +78,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
 
   // 個人情報保護方針への同意
+  if (isset($_POST['privacyPolicy'])) {
+    $_SESSION['privacyPolicy'] = $_POST['privacyPolicy'];
+    $privacyPolicy = $_POST['privacyPolicy'];
+  } else {
+    $_SESSION['privacyPolicy'] = '';
+    $privacyPolicy = '';
+  }
+
+  // 個人情報保護方針への同意のエラーチェック
   if (empty($privacyPolicy)) {
     $errors['privacyPolicy'] = '個人情報保護方針への同意をお願いいたします。';
   }
+
 
   // エラーがなければconfirm.phpへリダイレクト
   if (empty($errors)) {
@@ -303,17 +313,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <!-- 「個人情報保護方針」 -->
             <div class="form-group my-5">
               <div class="form-check d-flex justify-content-center">
-                <input type="checkbox" name="privacyPolicy" class="form-check-input" id="privacyPolicy">
+                <div class="d-flex flex-column align-items-center col-lg-8">
+                  <div class="d-flex">
+                  <input type="checkbox" name="privacyPolicy" class="form-check-input" id="privacyPolicy" value="accepted" <?php echo (!empty($privacyPolicy) ? 'checked' : ''); ?>>
                 <label class="form-check-label" for="privacyPolicy">「<a href="../privacy-policy/">個人情報保護方針</a>」に同意の上、チェックを入れて送信してください。</label>
+                </div>
+                <?php if (!empty($errors['privacyPolicy'])) : ?>
+                  <div class="error"><?php echo $errors['privacyPolicy']; ?></div>
+                <?php endif; ?>
+              </div>
               </div>
             </div>
 
             <!-- 送信ボタン -->
             <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-outline-success col-4">送信</button>
+              <button type="submit" class="btn btn-outline-success col-4">確認ページへ</button>
             </div>
           </form>
 
+        </div>
+        </div>
         </div>
   </section>
 

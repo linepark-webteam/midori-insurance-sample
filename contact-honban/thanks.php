@@ -1,29 +1,6 @@
-<?php
-session_start();
-
-// セッション変数が設定されていないか確認（直接アクセスをチェック）
-if (empty($_SESSION['name']) || empty($_SESSION['email'])) {
-  // セッション変数が設定されていない場合は、./contact/ へリダイレクト
-  header('Location: ../contact/');
-  exit;
-}
-
-// セッションからデータを取得
-$inquiryType = $_SESSION['inquiryType'] ?? '';
-$name = $_SESSION['name'] ?? '';
-$companyName = $_SESSION['companyName'] ?? '';
-$email = $_SESSION['email'] ?? '';
-$confirmEmail = $_SESSION['confirmEmail'] ?? '';
-$callbackPreference = $_SESSION['callbackPreference'] ?? '';
-$inquiry = $_SESSION['inquiry'] ?? '';
-$privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
-
-// データの確認
-// ここで何らかのバリデーションを行うことも可能です
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,8 +41,7 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">株式会社みどり総合保険事務所</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -120,81 +96,56 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
       <div class="mb-4">
         <div class="mb-5 d-flex flex-column align-items-center">
           <div class="section-header col-lg-4">
-            <h2>お問合せ</h2>
-            <h6>― Contact ―</h6>
+            <h2>お問合せ完了</h2>
+            <h6>― Complete ―</h6>
           </div>
         </div>
 
-    <form action="complete.php" method="post">
-
-        <div class="mb-4">
-          <h5>お問い合わせ項目</h5>
-          <h4><?php echo htmlspecialchars($inquiryType); ?></h4>
+        <div>
+          <div class="d-flex justify-content-center mb-3">
+          <h3 class="align-items-center">お問い合わせを受け付けました。</h3>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <p>ご入力いただきましたメールアドレス宛に、受付完了メールを送信いたしました。ご確認ください。</p>
+            <p>追って担当よりご連絡させていただきます。</p>
+            <p>お問い合わせいただき、ありがとうございました。</p>
+          </div>
         </div>
-
-        <div class="mb-4">
-          <h5>お名前</h5>
-          <h4><?php echo htmlspecialchars($name); ?></h4>
-        </div>
-
-        <div class="mb-4">
-          <h5>会社名</h5>
-          <h4><?php echo htmlspecialchars($companyName); ?></h4>
-        </div>
-
-        <div class="mb-4">
-          <h5>メールアドレス</h5>
-          <h4><?php echo htmlspecialchars($email); ?></h4>
-        </div>
-
-        <div class="mb-4">
-          <h5>担当者からの折り返し方法</h5>
-          <h4><?php echo htmlspecialchars($callbackPreference); ?></h4>
-        </div>
-
-        <div class="mb-4">
-          <h5>お問い合わせ内容</h5>
-          <h4><?php echo nl2br(htmlspecialchars($inquiry)); ?></h4>
-        </div>
-
-        <div class="d-flex justify-content-center">
-          <a href="index.php" class="btn btn-secondary me-3">修正</a>
-            <button type="submit" class="btn btn-primary">送信</button>
-        </div>
+      </div>
+    </div>
     </form>
+  </section>
 
-    <footer class="container-fluid d-flex justify-content-center mt-5 py-3">
+  <footer class="container-fluid d-flex justify-content-center mt-5 py-3">
     <div class="container">
       <div class="row">
         <div class="col-6 col-lg-4">
           <img src="../img/logo.webp" alt="logo" class="col-12 py-3">
-    </div>
-    </div>
-    <div class="row d-flex justify-content-around">
-      <div class="col-lg-4 align-content-center">
-        <p class="content-text">株式会社みどり総合保険事務所</p>
-        <p class="content-text">
-          〒252-0225<br>
-          神奈川県相模原市中央区<br>
-          緑が丘2丁目38-39<br>
-        </p>
-        <p class="content-text">TEL: <a href="tel:042-769-7735">042-769-7735</a><br>FAX: 042-769-7734<br>MOBILE: <a
-            href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a
-            href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <p class="content-text"><a href="../philosophy/">経営理念</a></p>
-        <p class="content-text"><a href="../company/">会社概要</a></p>
-        <p class="content-text"><a href="../profile/">代表プロフィール</a></p>
-        <p class="content-text"><a href="../personal-products/">個人のお客様</a></p>
-        <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
-        <p class="content-text"><a href="../access/">アクセス</a></p>
+      <div class="row d-flex justify-content-around">
+        <div class="col-lg-4 align-content-center">
+          <p class="content-text">株式会社みどり総合保険事務所</p>
+          <p class="content-text">
+            〒252-0225<br>
+            神奈川県相模原市中央区<br>
+            緑が丘2丁目38-39<br>
+          </p>
+          <p class="content-text">TEL: <a href="tel:042-769-7735">042-769-7735</a><br>FAX: 042-769-7734<br>MOBILE: <a href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
+        </div>
+        <div class="col-lg-4">
+          <p class="content-text"><a href="../philosophy/">経営理念</a></p>
+          <p class="content-text"><a href="../company/">会社概要</a></p>
+          <p class="content-text"><a href="../profile/">代表プロフィール</a></p>
+          <p class="content-text"><a href="../personal-products/">個人のお客様</a></p>
+          <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
+          <p class="content-text"><a href="../access/">アクセス</a></p>
+        </div>
+        <div class="col-lg-4">
+          <p class="content-text"><a href="../contact/">お問い合わせ</a></p>
+          <p class="content-text"><a href="../privacy-policy/">個人情報保護方針</a></p>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <p class="content-text"><a href="../contact/">お問い合わせ</a></p>
-        <p class="content-text"><a href="../privacy-policy/">個人情報保護方針</a></p>
-      </div>
-    </div>
     </div>
   </footer>
   <div class="copyright container-fluid row justify-content-center align-content-center">
@@ -213,4 +164,5 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
   <script src="../js/app.js"></script>
 
 </body>
+
 </html>

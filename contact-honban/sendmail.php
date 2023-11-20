@@ -26,19 +26,36 @@ $inquiry = $_SESSION['inquiry'] ?? '';
 $mail = new PHPMailer(true);
 
 try {
-    // 問い合わせ者に送るメール
+    // PHPMailerの設定
+    $mail->CharSet = 'UTF-8';
     $mail->setFrom('info@example.com', '株式会社みどり総合保険事務所');
     $mail->addAddress($email, $name);
-    $mail->isHTML(true);
+    $mail->isHTML(true); // HTML形式のメール
     $mail->Subject = 'お問い合わせありがとうございます';
-    $mail->Body = "お問い合わせ内容を受け付けました。<br>内容: $inquiry";
+
+    // メール本文の設定
+    $mail->Body = "以下の内容でお問い合わせを受け付けました。<br><br>" .
+        "お問い合わせ項目：" . htmlspecialchars($inquiryType) . "<br>" .
+        "お名前：" . htmlspecialchars($name) . "<br>" .
+        "会社名：" . htmlspecialchars($companyName) . "<br>" .
+        "メールアドレス：" . htmlspecialchars($email) . "<br>" .
+        "担当者からの折り返し方法：" . htmlspecialchars($callbackPreference) . "<br>" .
+        "お問い合わせ内容：<br>" . nl2br(htmlspecialchars($inquiry));
+
     $mail->send();
 
     // 指定したアドレスに送るメール
     $mail->clearAddresses();
     $mail->addAddress('ko.nagai.0801@gmail.com', '管理者');
     $mail->Subject = '新しいお問い合わせがあります';
-    $mail->Body = "新しいお問い合わせがあります。<br>内容: $inquiry";
+    $mail->Body = "新しいお問い合わせがあります。<br><br>".
+    "お問い合わせ項目：" . htmlspecialchars($inquiryType) . "<br>" .
+    "お名前：" . htmlspecialchars($name) . "<br>" .
+    "会社名：" . htmlspecialchars($companyName) . "<br>" .
+    "メールアドレス：" . htmlspecialchars($email) . "<br>" .
+    "担当者からの折り返し方法：" . htmlspecialchars($callbackPreference) . "<br>" .
+    "お問い合わせ内容：<br>" . nl2br(htmlspecialchars($inquiry));
+
     $mail->send();
 
     // セッションの破棄
@@ -46,7 +63,7 @@ try {
     session_destroy();
 
     // 完了ページやメッセージにリダイレクト
-    header('Location: thanks.php'); // thank_you.phpは適宜作成してください
+    header('Location: thanks.php'); // thanks.phpは適宜作成
     exit;
 } catch (Exception $e) {
     echo "メッセージは送信できませんでした。Mailer Error: {$mail->ErrorInfo}";
