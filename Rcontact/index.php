@@ -73,8 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   // お問い合わせ内容
   if (empty($inquiry)) {
     $errors['inquiry'] = 'お問い合わせ内容を入力してください。';
-  } elseif (strlen($inquiry) > 1024) {
-    $errors['inquiry'] = 'お問い合わせ内容は1024文字以内で入力してください。';
+  } elseif (strlen($inquiry) > 1000) {
+    $errors['inquiry'] = 'お問い合わせ内容は1000文字以内で入力してください。';
   }
 
   // 個人情報保護方針への同意
@@ -97,8 +97,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="●●●">
-  <meta name="description" content="●●●">
+  <meta name="keywords" content="みどり総合保険事務所 お問い合わせ">
+  <meta name="description" content="お問い合わせ｜株式会社みどり総合保険事務所">
   <link rel="icon" href="../img/favicon.webp" type="image/x-icon">
   <link rel="apple-touch-icon" href="../img/appletouch.png" sizes="180x180">
   <title>お問い合わせ｜株式会社みどり総合保険事務所</title>
@@ -195,7 +195,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           </div>
         </div>
         <div class="container row">
-          <form action="index.php" method="post">
+          <form action="" method="post">
             <!-- お問合わせ項目 -->
             <div class="form-group col-12 d-lg-flex">
               <label for="inquiryType" class="col-lg-3 mb-2 me-5">お問合わせ項目 <span class="badge text-bg-success">必須</span></label>
@@ -292,8 +292,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="form-group d-lg-flex mt-3">
               <label for="inquiry" class="col-lg-3 mb-2 me-5">お問合せ内容 <span class="badge text-bg-success">必須</span></label>
               <div class="d-flex flex-column col-lg-8">
-                <textarea name="inquiry" class="form-control" id="inquiry" rows="10" placeholder="お問い合わせ内容を入力してください" maxlength="1024"><?php echo htmlspecialchars($inquiry); ?></textarea>
-                <span class="small">（1024文字以内）</span>
+                <textarea name="inquiry" class="form-control" id="inquiry" rows="10" placeholder="お問い合わせ内容を入力してください" maxlength="1000"><?php echo htmlspecialchars($inquiry); ?></textarea>
+                <span class="small">（1000文字以内）</span>
                 <?php if (!empty($errors['inquiry'])) : ?>
                   <div class="error"><?php echo $errors['inquiry']; ?></div>
                 <?php endif; ?>

@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+// セッション変数が設定されていないか確認（直接アクセスをチェック）
+if (empty($_SESSION['name']) || empty($_SESSION['email'])) {
+  // セッション変数が設定されていない場合は、./contact/ へリダイレクト
+  header('Location: ../contact/');
+  exit;
+}
+
 // セッションからデータを取得
 $inquiryType = $_SESSION['inquiryType'] ?? '';
 $name = $_SESSION['name'] ?? '';
@@ -9,15 +16,10 @@ $email = $_SESSION['email'] ?? '';
 $confirmEmail = $_SESSION['confirmEmail'] ?? '';
 $callbackPreference = $_SESSION['callbackPreference'] ?? '';
 $inquiry = $_SESSION['inquiry'] ?? '';
+$privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
 
-// 送信処理
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // ここにメール送信などの処理を記述
-
-    // 処理完了後、complete.phpにリダイレクト
-    header('Location: complete.php');
-    exit;
-}
+// データの確認
+// ここで何らかのバリデーションを行うことも可能です
 ?>
 
 <!DOCTYPE html>
@@ -115,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <section class="mb-5 py-5">
     <div class="container">
-      <div class="mb-3">
+      <div class="mb-4">
         <div class="mb-5 d-flex flex-column align-items-center">
           <div class="section-header col-lg-4">
             <h2>お問合せ</h2>
@@ -123,30 +125,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           </div>
         </div>
 
-    <form action="confirm.php" method="post">
-        <h3>お問い合わせ項目</h3>
-        <p><?php echo htmlspecialchars($inquiryType); ?></p>
+    <form action="complete.php" method="post">
 
-        <h3>お名前</h3>
-        <p><?php echo htmlspecialchars($name); ?></p>
+        <div class="mb-4">
+          <h5>お問い合わせ項目</h5>
+          <h4><?php echo htmlspecialchars($inquiryType); ?></h4>
+        </div>
 
-        <h3>会社名</h3>
-        <p><?php echo htmlspecialchars($companyName); ?></p>
+        <div class="mb-4">
+          <h5>お名前</h5>
+          <h4><?php echo htmlspecialchars($name); ?></h4>
+        </div>
 
-        <h3>メールアドレス</h3>
-        <p><?php echo htmlspecialchars($email); ?></p>
+        <div class="mb-4">
+          <h5>会社名</h5>
+          <h4><?php echo htmlspecialchars($companyName); ?></h4>
+        </div>
 
-        <h3>確認用メールアドレス</h3>
-        <p><?php echo htmlspecialchars($confirmEmail); ?></p>
+        <div class="mb-4">
+          <h5>メールアドレス</h5>
+          <h4><?php echo htmlspecialchars($email); ?></h4>
+        </div>
 
-        <h3>担当者からの折り返し方法</h3>
-        <p><?php echo htmlspecialchars($callbackPreference); ?></p>
+        <div class="mb-4">
+          <h5>担当者からの折り返し方法</h5>
+          <h4><?php echo htmlspecialchars($callbackPreference); ?></h4>
+        </div>
 
-        <h3>お問い合わせ内容</h3>
-        <p><?php echo nl2br(htmlspecialchars($inquiry)); ?></p>
+        <div class="mb-4">
+          <h5>お問い合わせ内容</h5>
+          <h4><?php echo nl2br(htmlspecialchars($inquiry)); ?></h4>
+        </div>
 
         <div class="d-flex justify-content-center">
-          <a href="index.php" class="btn btn-secondary">修正</a>
+          <a href="index.php" class="btn btn-secondary me-3">修正</a>
             <button type="submit" class="btn btn-primary">送信</button>
         </div>
     </form>
