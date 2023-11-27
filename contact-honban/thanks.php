@@ -41,7 +41,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">株式会社みどり総合保険事務所</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,6 +58,7 @@
               <li><a class="dropdown-item" href="../philosophy/">経営理念</a></li>
               <li><a class="dropdown-item" href="../company/">会社概要</a></li>
               <li><a class="dropdown-item" href="../profile/">代表プロフィール</a></li>
+              <li><a class="dropdown-item" href="../company/staff.html">スタッフ紹介</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

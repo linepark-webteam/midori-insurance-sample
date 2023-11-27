@@ -161,6 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <li><a class="dropdown-item" href="../philosophy/">経営理念</a></li>
               <li><a class="dropdown-item" href="../company/">会社概要</a></li>
               <li><a class="dropdown-item" href="../profile/">代表プロフィール</a></li>
+              <li><a class="dropdown-item" href="../company/staff.html">スタッフ紹介</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
