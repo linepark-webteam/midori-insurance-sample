@@ -165,7 +165,7 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
     </form>
 </section>
 
-    <footer class="container-fluid d-flex justify-content-center mt-5 py-3">
+<footer class="container-fluid d-flex justify-content-center mt-5 py-3">
     <div class="container">
       <div class="row">
         <div class="col-6 col-lg-4">
@@ -188,6 +188,7 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
         <p class="content-text"><a href="../philosophy/">経営理念</a></p>
         <p class="content-text"><a href="../company/">会社概要</a></p>
         <p class="content-text"><a href="../profile/">代表プロフィール</a></p>
+        <p class="content-text"><a href="../company/staff.html">スタッフ紹介</a></p>
         <p class="content-text"><a href="../personal-products/">個人のお客様</a></p>
         <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
         <p class="content-text"><a href="../access/">アクセス</a></p>
@@ -215,4 +216,5 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
   <script src="../js/app.js"></script>
 
 </body>
+
 </html>
