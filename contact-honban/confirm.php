@@ -18,8 +18,6 @@ $callbackPreference = $_SESSION['callbackPreference'] ?? '';
 $inquiry = $_SESSION['inquiry'] ?? '';
 $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
 
-// データの確認
-// ここで何らかのバリデーションを行うことも可能です
 ?>
 
 <!DOCTYPE html>
@@ -81,7 +79,7 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
               <li><a class="dropdown-item" href="../philosophy/">経営理念</a></li>
               <li><a class="dropdown-item" href="../company/">会社概要</a></li>
               <li><a class="dropdown-item" href="../profile/">代表プロフィール</a></li>
-              <li><a class="dropdown-item" href="../company/staff.html">スタッフ紹介</a></li>
+              <li><a class="dropdown-item" href="../staff/">スタッフ紹介</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
