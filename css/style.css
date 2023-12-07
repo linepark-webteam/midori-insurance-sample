@@ -16,6 +16,9 @@ h1 {
 /* TOPページ及び、共通のスタイル */
 
 /* ナビゲーションメニュー */
+.navbar .navbar-brand {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
 .navbar-nav .nav-link:hover {
   background-color: #299329;
   color: #fff;
