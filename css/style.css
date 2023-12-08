@@ -88,7 +88,7 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3); /* 0.5 は透明度を表し、0.0（完全透明）から1.0（完全不透明）まで調整可能です */
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .section-header {
