@@ -1,0 +1,187 @@
+/* AnimationsCss */
+
+/*プリローダー プリローダー総合のスタイル */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f8f3; /* ソフトな緑色の背景 */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 葉っぱが回転するアニメーション */
+.leaf-loader {
+  width: 60px;
+  height: 60px;
+  background: url('../img/leaf.png') no-repeat center center;
+  background-size: contain;
+  animation: spin3dLeaf 2s linear infinite;
+  transform-style: preserve-3d; /* 3D変形を有効化 */
+}
+
+/* 進行状況のリング */
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* リングの大きさを葉っぱより大きくする */
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #5ad6ff; /* リングの色と太さ */
+  border-top-color: #3e9; /* 進行状況を示す色 */
+  animation: spinProgress 2s linear infinite; /* ロード中にゆっくり回転させる */
+}
+
+@keyframes spinProgress {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin3dLeaf {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg); /* X軸とY軸の周りに回転 */
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg); /* 360度回転 */
+  }
+}
+
+
+/* ボールが跳ねるアニメーション（未使用） */
+.ball-loader {
+  width: 200px;
+  height: 200px;
+  background: url('../img/ball.webp') no-repeat center center;
+  background-size: contain;
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* 以下のアニメーションは初期状態として非表示にする */
+.slide-right-content,
+.slide-left-content,
+.slide-bottom-content,
+.slide-top-content,
+.slide-in {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* .visibleクラスが追加されたら表示 */
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 左からのスライドイン */
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation-name: slide-in-left;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* 右からのスライドイン */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation-name: slide-in-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+/* 下から上へのスライドイン */
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+  animation-name: slide-in-bottom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* 上から下へのスライドイン */
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-top {
+  animation-name: slide-in-top;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* フェードイン */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.visible.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+

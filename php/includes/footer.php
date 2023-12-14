@@ -18,17 +18,17 @@
           href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
     </div>
     <div class="col-lg-4">
-      <p class="content-text"><a href="../philosophy/">経営理念</a></p>
-      <p class="content-text"><a href="../company/">会社概要</a></p>
-      <p class="content-text"><a href="../message/">代表メッセージ</a></p>
-      <p class="content-text"><a href="../staff/">スタッフ紹介</a></p>
-      <p class="content-text"><a href="../personal-products/">個人のお客様</a></p>
-      <p class="content-text"><a href="../corporation-products/">法人のお客様</a></p>
-      <p class="content-text"><a href="../access/">アクセス</a></p>
+      <p class="content-text"><a href="/philosophy/">経営理念</a></p>
+      <p class="content-text"><a href="/company/">会社概要</a></p>
+      <p class="content-text"><a href="/message/">代表メッセージ</a></p>
+      <p class="content-text"><a href="/staff/">スタッフ紹介</a></p>
+      <p class="content-text"><a href="/personal-products/">個人のお客様</a></p>
+      <p class="content-text"><a href="/corporation-products/">法人のお客様</a></p>
+      <p class="content-text"><a href="/access/">アクセス</a></p>
     </div>
     <div class="col-lg-4">
-      <p class="content-text"><a href="../contact/">お問い合わせ</a></p>
-      <p class="content-text"><a href="../privacy-policy/">個人情報保護方針</a></p>
+      <p class="content-text"><a href="/contact/">お問い合わせ</a></p>
+      <p class="content-text"><a href="/privacy-policy/">個人情報保護方針</a></p>
     </div>
   </div>
   </div>

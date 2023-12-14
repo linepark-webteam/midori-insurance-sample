@@ -1,0 +1,94 @@
+@media screen and (max-width: 960px) {
+  .brand {
+    font-size: calc(22px + 6 * ((100vw - 320px) / 640));
+    margin: 0 auto;
+  }
+  .navbar-brand img {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+  }
+  .navbar-brand img {
+    width: 50vw;
+    height: auto;
+  }
+
+  .carousel-fixed-text {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .carousel-fixed-text p {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 640));
+    font-weight: 600;
+  }
+  .contact h3 {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 640));
+  }
+
+  /* 下層ページ 画像上の文字 */
+  .hero-fixed-text h3 {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+    font-weight: 600;
+  }
+  .hero-fixed-text h2 {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 640));
+    font-weight: 600;
+  }
+  /* 下層ページ タイトルの文字サイズ */
+  .section-header h2 {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+    font-weight: 600;
+  }
+  .section-header span {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+    font-weight: 600;
+  }
+  .section-header h6 {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 640));
+    font-weight: 600;
+  }
+
+  .content-text {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+  }
+  .content-text-lg {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 640));
+  }
+
+  .copyright {
+    height: 5vh;
+    font-size: calc(12px + 2 * ((100vw - 320px) / 640));
+  }
+
+  /* CONTACT */
+  .form-group label {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 879));
+    vertical-align: text-bottom;
+  }
+  .form-group input {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 640));
+  }
+  .form-group input[type="checkbox"] {
+    width: 20px;
+    margin-left: 0;
+  }
+  /* ラジオボタン項目 */
+  .form-check-block {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+  }
+  .form-group textarea {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 640));
+  }
+  /* 送信ボタン */
+  button[type="submit"] {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 640));
+  }
+}
+
+/* 以下、微調整項目 */
+
+/* ヘッダーのイメージのみ768px以上を指定 */
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 25vw;
+    height: auto;
+  }
+}
+
