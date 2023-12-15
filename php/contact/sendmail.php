@@ -28,7 +28,7 @@ $mail = new PHPMailer(true);
 try {
     // PHPMailerの設定
     $mail->CharSet = 'UTF-8';
-    $mail->setFrom('info@example.com', '株式会社みどり総合保険事務所');
+    $mail->setFrom('info@midori-hoken.com', '株式会社みどり総合保険事務所');
     $mail->addAddress($email, $name);
     $mail->isHTML(true); // HTML形式のメール
     $mail->Subject = 'お問い合わせありがとうございます';
@@ -63,7 +63,7 @@ try {
     session_destroy();
 
     // 完了ページやメッセージにリダイレクト
-    header('Location: thanks.php'); // thanks.phpは適宜作成
+    header('Location: thanks.php');
     exit;
 } catch (Exception $e) {
     echo "メッセージは送信できませんでした。Mailer Error: {$mail->ErrorInfo}";

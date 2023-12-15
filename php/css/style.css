@@ -5,9 +5,9 @@
 body {
   background-image: url(../img/background2.webp);
   background-size: cover;
-  font-family: 'Noto Serif JP', serif;
-  font-family: 'Klee One', 'cursive', serif;
+  font-family: 'Klee One', 'cursive', 'Noto Serif JP', serif;
 }
+
 h1 {
   background-color: rgba(209, 243, 211, .5);
   margin: 0;
@@ -35,19 +35,6 @@ h1 {
   background-color:  #CCFFCC;
   color: #004D40;
 }
-
-/* 色見本用テストコード */
-/* .heading {
-  font-weight: 600;
-  background-color:  #98FF98;
-  color: #006400;
-} */
-/* 色見本用テストコード */
-/* .heading {
-  font-weight: 600;
-  background-color:   #508370;
-  color: #FFFFF0;
-} */
 
 .hero {
   width: 100%;
