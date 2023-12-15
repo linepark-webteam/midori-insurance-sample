@@ -47,6 +47,7 @@ try {
     // 指定したアドレスに送るメール
     $mail->clearAddresses();
     $mail->addAddress('ko.nagai.0801@gmail.com', '管理者');
+    $mail->addAddress('177mmidori@nifty.com', '管理者');
     $mail->Subject = '新しいお問い合わせがあります';
     $mail->Body = "新しいお問い合わせがあります。<br><br>".
     "お問い合わせ項目：" . htmlspecialchars($inquiryType) . "<br>" .

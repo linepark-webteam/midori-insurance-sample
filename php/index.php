@@ -77,18 +77,19 @@
 
   <!-- 経営理念 -->
   <section class="py-5">
-    <h2 class="px-2 py-2 col-12 heading">経営理念</h2>
-    <div class="container policy slide-left-content">
-      <div class="row">
-        <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
-        <div class="d-lg-flex justify-content-around">
-          <button class="btn btn-outline-success col-lg-5 mt-5"><a href="/philosophy/">経営理念</a></button>
-          <button class="btn btn-outline-success col-lg-5 mt-5"><a href="/company/">会社概要</a></button>
-        </div>
+  <h2 class="px-2 py-2 col-12 heading">経営理念</h2>
+  <div class="container policy slide-left-content">
+    <div class="row">
+      <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
+      <div class="d-flex flex-column flex-lg-row justify-content-around">
+        <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="/philosophy/">経営理念</a></button>
+        <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="/company/">会社概要</a></button>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+</section>
+
+
 
   <section class="py-5">
     <!-- <div class="d-flex"> -->
