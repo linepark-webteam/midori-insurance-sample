@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-6 col-lg-4">
-        <img src="../img/logo.webp" alt="logo" class="col-12 py-3">
+        <img src="/img/logo.webp" alt="logo" class="col-12 py-3">
   </div>
   </div>
   <div class="row d-flex justify-content-around">
@@ -15,7 +15,7 @@
       </p>
       <p class="content-text">TEL: <a href="tel:042-769-7735">042-769-7735</a><br>FAX: 042-769-7734<br>MOBILE: <a
           href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a
-          href="mailto:177mmidori@nifty.com">177mmidori@nifty.com</a></p>
+          href="mailto:l77mmidori@nifty.com">l77mmidori@nifty.com</a></p>
     </div>
     <div class="col-lg-4">
       <p class="content-text"><a href="/philosophy/">経営理念</a></p>
@@ -48,6 +48,6 @@
   <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e7eaec89a2.js" crossorigin="anonymous"></script>
   <!-- Created JS -->
-  <script src="../js/app.js"></script>
+  <script src="/js/app.js"></script>
 
 

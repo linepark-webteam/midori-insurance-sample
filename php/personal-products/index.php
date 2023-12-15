@@ -39,9 +39,9 @@
         </div>
         <div class="row justify-content-center slide-bottom-content">
           <button class="btn btn-outline-success content-text col-8 col-lg-4 mb-3 mx-2"><a
-              href="./personal-products/">商品ラインナップ</a></button>
+              href="https://www.aioinissaydowa.co.jp/personal/request/download.html">商品ラインナップ</a></button>
           <button class="btn btn-outline-success  content-text col-8 col-lg-4 mb-3 mx-2"><a
-              href="./personal-products/">資料請求<br>PDFダウンロードページへ</a></button>
+              href="https://www.aioinissaydowa.co.jp/personal/request/download.html">資料請求<br>PDFダウンロードページへ</a></button>
         </div>
       </div>
       <div class="my-5"></div>
