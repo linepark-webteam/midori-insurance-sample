@@ -78,7 +78,7 @@
               神奈川県相模原市中央区<br>
               緑が丘2丁目38-39<br></p>
             <p>電話番号: 042-769-7735</p>
-            <p>メールアドレス: 177mmidori@nifty.com</p>
+            <p>メールアドレス: l77mmidori@nifty.com</p>
           </div>
         </div>
       </div>
