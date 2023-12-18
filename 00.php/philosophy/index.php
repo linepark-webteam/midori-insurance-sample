@@ -27,7 +27,7 @@
     <div class="container">
       <div class="mb-3">
         <div class="mb-5 d-flex flex-column align-items-center">
-          <div  class="section-header col-lg-8 slide-bottom-content">
+          <div  class="section-header col-lg-6 slide-bottom-content">
             <h2>経営理念</h2>
             <h6>― Philosophy ―</h6>
           </div>
@@ -47,7 +47,7 @@
           </div>
           <div class="mb-3">
             <div class="mb-5 d-flex flex-column align-items-center">
-              <div  class="section-header col-lg-8 slide-bottom-content">
+              <div  class="section-header col-lg-6 slide-bottom-content">
                 <h2>活動方針</h2>
                 <h6>― Activity Policy ―</h6>
               </div>

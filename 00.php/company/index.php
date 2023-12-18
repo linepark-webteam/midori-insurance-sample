@@ -27,7 +27,7 @@
     <div class="container">
       <div class="mb-3">
         <div class="mb-5 d-flex flex-column align-items-center">
-          <div  class="section-header col-lg-9 slide-bottom-content">
+          <div  class="section-header col-lg-6 slide-bottom-content">
             <h2>会社概要</h2>
             <h6>― Company ―</h6>
           </div>

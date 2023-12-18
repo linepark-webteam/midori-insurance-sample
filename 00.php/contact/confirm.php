@@ -48,7 +48,7 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
     <div class="container">
       <div class="mb-4">
         <div class="mb-5 d-flex flex-column align-items-center">
-          <div class="section-header col-lg-4">
+          <div class="section-header col-lg-6">
             <h2>お問合せ</h2>
             <h6>― Contact ―</h6>
           </div>
