@@ -2,10 +2,20 @@
 <html lang="ja">
 
 <head>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 
   <meta name="keywords" content="みどり保健">
-  <meta name="description" content="株式会社みどり総合保険事務所のホームページです。">
+  <meta name="description" content="株式会社みどり総合保険事務所 - 神奈川県相模原市中央区に拠点を置き、個人向けから法人向けまで幅広い保険商品を取り扱っています。私たちの使命は、保険を通じてお客様の安心な生活と夢の実現を支援することです。キャッチコピー「人を幸せにできる会社になる」のもと、保険以外の分野でもお客様の良きパートナーとして「みどりに任せてよかった」と思っていただけるようなサービスを提供しています。">
+  <meta property="og:title" content="株式会社みどり総合保険事務所">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:image" content="画像のURL"> -->
+  <meta property="og:url" content="https://midori-hoken.com">
+  <meta property="og:description" content="株式会社みどり総合保険事務所へようこそ！神奈川県相模原市で、個人から法人までの幅広い保険ニーズに応え、お客様の安心と夢の実現をサポートします。私たちは、保険を超えた価値を提供し、お客様に「みどりに任せてよかった」と感じていただけるよう努めています。">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- <meta name="twitter:site" content="@Twitterアカウント"> -->
+  <meta name="twitter:title" content="株式会社みどり総合保険事務所">
+  <meta name="twitter:description" content="株式会社みどり総合保険事務所へようこそ！神奈川県相模原市で、個人から法人までの幅広い保険ニーズに応え、お客様の安心と夢の実現をサポートします。私たちは、保険を超えた価値を提供し、お客様に「みどりに任せてよかった」と感じていただけるよう努めています。">
+  <!-- <meta name="twitter:image" content="画像のURL"> -->
   <title>みどり総合保険事務所</title>
   <link rel="stylesheet" href="/css/animation.css">
 </head>
@@ -77,17 +87,17 @@
 
   <!-- 経営理念 -->
   <section class="py-5">
-  <h2 class="px-2 py-2 col-12 heading">経営理念</h2>
-  <div class="container policy slide-left-content">
-    <div class="row">
-      <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
-      <div class="d-flex flex-column flex-lg-row justify-content-around">
-        <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="/philosophy/">経営理念</a></button>
-        <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="/company/">会社概要</a></button>
+    <h2 class="px-2 py-2 col-12 heading">経営理念</h2>
+    <div class="container policy slide-left-content">
+      <div class="row">
+        <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
+          <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="/philosophy/">経営理念</a></button>
+          <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="/company/">会社概要</a></button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
