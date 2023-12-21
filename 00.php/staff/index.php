@@ -38,14 +38,18 @@
           <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
             <div class="d-lg-flex align-items-top flex-row-reverse col-12">
               <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-right-content"
-                  src="../img/n-hamajima.webp" alt=""></div>
+                  src="../img/n-hamajima.webp" alt="濱島 昇"></div>
               <div class="col-12 col-lg-7 slide-left-content">
                 <div class="text-start">
                   <h4>株式会社みどり総合保険事務所 会長</h4>
                   <h3>濱島 昇</h3>
                 </div>
                 <div class="text-start">
-                  <p>　</p>
+                  <p class="h5">『お客様からの信頼をいただく』</p>
+                  <p>私達の変わらないモットーです。</p>
+                  <p>どうぞ宜しくお願い申し上げます。</p>
+                  <br>
+                  <p>趣味はゴルフです。</p>
                 </div>
               </div>
             </div>
@@ -54,7 +58,7 @@
           <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
             <div class="d-lg-flex align-items-top col-12">
               <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-left-content"
-                  src="../img/o-taya.webp" alt=""></div>
+                  src="../img/o-taya.webp" alt="田谷 治"></div>
               <div class="col-12 col-lg-7 slide-right-content">
                 <div class="text-start">
                   <h3>田谷 治</h3>
@@ -71,7 +75,7 @@
           <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
             <div class="d-lg-flex align-items-top flex-row-reverse col-12">
               <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-right-content"
-                  src="../img/y-sato.webp" alt=""></div>
+                  src="../img/y-sato.webp" alt="佐藤 義明"></div>
               <div class="col-12 col-lg-7 slide-left-content">
                 <div class="text-start">
                   <h3>佐藤 義明</h3>
@@ -89,7 +93,7 @@
           <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
             <div class="d-lg-flex align-items-top col-12">
               <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-left-content"
-                  src="../img/s-manabu.webp" alt=""></div>
+                  src="../img/s-manabu.webp" alt="佐藤 学"></div>
               <div class="col-12 col-lg-7 slide-right-content">
                 <div class="text-start">
                   <h3>佐藤 学</h3>
@@ -105,7 +109,7 @@
           <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
             <div class="d-lg-flex align-items-top flex-row-reverse col-12">
               <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-right-content"
-                  src="../img/n-maeda.webp" alt=""></div>
+                  src="../img/n-maeda.webp" alt="前田 直哉"></div>
               <div class="col-12 col-lg-7 slide-left-content">
                 <div class="text-start">
                   <h3>前田 直哉</h3>
@@ -123,7 +127,7 @@
           <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
             <div class="d-lg-flex align-items-top col-12">
               <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-left-content"
-                  src="../img/m-kajiwara.webp" alt=""></div>
+                  src="../img/m-kajiwara.webp" alt="梶原 路子"></div>
               <div class="col-12 col-lg-7 slide-right-content">
                 <div class="text-start">
                   <h3>梶原 路子</h3>
@@ -136,7 +140,7 @@
             <div class="d-flex flex-column justify-content-center align-items-center text-center col-12 mb-5">
               <div class="d-lg-flex align-items-top flex-row-reverse col-12">
                 <div class="d-flex justify-content-center mx-2 mb-2"><img class="d-block col-12 slide-right-content"
-                    src="../img/y-kobayasi.webp" alt=""></div>
+                    src="../img/y-kobayasi.webp" alt="小林 由美"></div>
                 <div class="col-12 col-lg-7 slide-left-content">
                   <div class="text-start">
                     <h3>小林 由美</h3>
