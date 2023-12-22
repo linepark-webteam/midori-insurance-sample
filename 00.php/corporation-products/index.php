@@ -14,7 +14,7 @@
 
   <section class="hero mb-5">
     <div class="image-section position-relative masked">
-      <img src="../img/corporation-products1.webp" class="d-block w-100" alt="法人のお客様向け商品">
+      <img src="../img/corporation-products1.webp" class="cover-img d-block" alt="法人のお客様向け商品">
       <div class="position-absolute top-50 start-50 translate-middle text-white">
         <div class="hero-fixed-text d-flex flex-column align-items-center justify-content-center">
           <h3>Corporation Products</h3>

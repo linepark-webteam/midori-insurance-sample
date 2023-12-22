@@ -39,6 +39,12 @@ h1 {
 .hero {
   width: 100%;
 }
+
+.cover-img {
+  width: 100vw;
+  max-width: 4000px;
+}
+
 section {
   background-color: #fff;
   width: 90%;
@@ -230,4 +236,5 @@ footer a:hover::after {
     text-align: center;
     text-decoration: none;
   }
+
 
