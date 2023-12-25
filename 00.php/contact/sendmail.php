@@ -28,7 +28,7 @@ $mail = new PHPMailer(true);
 try {
     // PHPMailerの設定
     $mail->CharSet = 'UTF-8';
-    $mail->setFrom('info@midori-hoken.com', '株式会社みどり総合保険事務所');
+    $mail->setFrom('noreply@midori-hoken.com', '株式会社みどり総合保険事務所');
     $mail->addAddress($email, $name);
     $mail->isHTML(true); // HTML形式のメール
     $mail->Subject = 'お問い合わせありがとうございます';
@@ -44,18 +44,20 @@ try {
 
     $mail->send();
 
+    // 送信元メールアドレスと名前を設定
+    $mail->setFrom('info@midori-hoken.com', 'HP問い合わせフォーム');
     // 指定したアドレスに送るメール
     $mail->clearAddresses();
     $mail->addAddress('ko.nagai.0801@gmail.com', '管理者');
     $mail->addAddress('l77mmidori@nifty.com', '管理者');
     $mail->Subject = '新しいお問い合わせがあります';
-    $mail->Body = "新しいお問い合わせがあります。<br><br>".
-    "お問い合わせ項目：" . htmlspecialchars($inquiryType) . "<br>" .
-    "お名前：" . htmlspecialchars($name) . "<br>" .
-    "会社名：" . htmlspecialchars($companyName) . "<br>" .
-    "メールアドレス：" . htmlspecialchars($email) . "<br>" .
-    "担当者からの折り返し方法：" . htmlspecialchars($callbackPreference) . "<br>" .
-    "お問い合わせ内容：<br>" . nl2br(htmlspecialchars($inquiry));
+    $mail->Body = "新しいお問い合わせがあります。<br><br>" .
+        "お問い合わせ項目：" . htmlspecialchars($inquiryType) . "<br>" .
+        "お名前：" . htmlspecialchars($name) . "<br>" .
+        "会社名：" . htmlspecialchars($companyName) . "<br>" .
+        "メールアドレス：" . htmlspecialchars($email) . "<br>" .
+        "担当者からの折り返し方法：" . htmlspecialchars($callbackPreference) . "<br>" .
+        "お問い合わせ内容：<br>" . nl2br(htmlspecialchars($inquiry));
 
     $mail->send();
 
@@ -69,4 +71,3 @@ try {
 } catch (Exception $e) {
     echo "メッセージは送信できませんでした。Mailer Error: {$mail->ErrorInfo}";
 }
-?>
