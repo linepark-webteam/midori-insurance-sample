@@ -4,7 +4,7 @@
 <head>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 
-  <meta name="keywords" content="みどり保健">
+  <meta name="keywords" content="みどり保険, 相模原, 保険, 濱島一志, 神奈川県">
   <meta name="description" content="株式会社みどり総合保険事務所 - 神奈川県相模原市中央区に拠点を置き、個人向けから法人向けまで幅広い保険商品を取り扱っています。私たちの使命は、保険を通じてお客様の安心な生活と夢の実現を支援することです。キャッチコピー「人を幸せにできる会社になる」のもと、保険以外の分野でもお客様の良きパートナーとして「みどりに任せてよかった」と思っていただけるようなサービスを提供しています。">
   <meta property="og:title" content="株式会社みどり総合保険事務所">
   <meta property="og:type" content="website">
@@ -19,6 +19,15 @@
   <title>みどり総合保険事務所</title>
   <link rel="stylesheet" href="/css/animation.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLRVBVGE8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLRVBVGE8R');
+</script>
 
 <body>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

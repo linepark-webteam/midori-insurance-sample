@@ -3,11 +3,20 @@
 
 <head>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-    <meta name="keywords" content="●●●">
-    <meta name="description" content="●●●">
-    <title>個人向け商品紹介｜株式会社みどり総合保険事務所</title>
+  <meta name="keywords" content="みどり保険, 相模原, 保険, 濱島一志, 保険">
+  <meta name="description" content="●●●">
+  <title>個人向け商品紹介｜株式会社みどり総合保険事務所</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLRVBVGE8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLRVBVGE8R');
+</script>
 
 <body>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
@@ -38,10 +47,8 @@
           <p class="h4 content-text slide-right-content">充実した補償とサービスであなたの生活をサポートします。</p>
         </div>
         <div class="row justify-content-center slide-bottom-content">
-          <button class="btn btn-outline-success content-text col-8 col-lg-4 mb-3 mx-2"><a
-              href="https://www.aioinissaydowa.co.jp/personal/request/download.html">商品ラインナップ</a></button>
-          <button class="btn btn-outline-success  content-text col-8 col-lg-4 mb-3 mx-2"><a
-              href="https://www.aioinissaydowa.co.jp/personal/request/download.html">資料請求<br>PDFダウンロードページへ</a></button>
+          <button class="btn btn-outline-success content-text col-8 col-lg-4 mb-3 mx-2"><a href="https://www.aioinissaydowa.co.jp/personal/request/download.html">商品ラインナップ</a></button>
+          <button class="btn btn-outline-success  content-text col-8 col-lg-4 mb-3 mx-2"><a href="https://www.aioinissaydowa.co.jp/personal/request/download.html">資料請求<br>PDFダウンロードページへ</a></button>
         </div>
       </div>
       <div class="my-5"></div>

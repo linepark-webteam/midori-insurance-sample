@@ -105,15 +105,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="ja">
 
 <head>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-  <meta name="keywords" content="みどり総合保険事務所 お問い合わせ">
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
+  <meta name="keywords" content="みどり保険, 相模原, 保険, 濱島一志, 保険">
   <meta name="description" content="お問い合わせ｜株式会社みどり総合保険事務所">
   <title>お問い合わせ｜株式会社みどり総合保険事務所</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLRVBVGE8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLRVBVGE8R');
+</script>
+
 <body>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
   <section class="hero mb-5">
     <div class="image-section position-relative masked">
