@@ -3,19 +3,19 @@
 
 <head>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-  <meta name="keywords" content="みどり保険, 相模原, 保険, 濱島一志, 神奈川県">
-  <meta name="description" content="●●●">
+  <meta name="keywords" content="みどり保険, 相模原, 保険, 濱島一志, 神奈川">
+  <meta name="description" content="当事務所の経営理念をご紹介します">
   <title>経営理念｜株式会社みどり総合保険事務所</title>
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLRVBVGE8R"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K07XZCD6JK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-SLRVBVGE8R');
+  gtag('config', 'G-K07XZCD6JK');
 </script>
 
 <body>
