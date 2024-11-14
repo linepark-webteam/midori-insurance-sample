@@ -85,9 +85,9 @@
     <h2 class="px-2 py-2 col-12 heading">お知らせ</h2>
     <div class="container slide-right-content">
       <div class="row">
-        <h4>2023年12月17日（<span class="text-danger">日</span>）</h4>
-        <h3>FCコラソン創設30周年</h3>
-        <h3>大感謝祭 in 国立競技場　開催！</h3>
+        <!-- <h4>2023年12月17日（<span class="text-danger">日</span>）</h4> -->
+        <!-- <h3>FCコラソン創設30周年</h3> -->
+        <h3>高西先生背骨調整治療セミナー　開催！</h3>
         <div class="d-flex justify-content-center">
           <button class="btn btn-outline-success col-lg-4 mt-5"><a href="/campaign/">詳細はこちら！</a></button>
         </div>

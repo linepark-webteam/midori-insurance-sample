@@ -13,9 +13,11 @@
         神奈川県相模原市中央区<br>
         緑が丘2丁目38-39<br>
       </p>
-      <p class="content-text">TEL: <a href="tel:042-769-7735">042-769-7735</a><br>FAX: 042-769-7734<br>MOBILE: <a
-          href="tel:090-7425-1653">090-7425-1653</a><br>MAIL: <a
-          href="mailto:l77mmidori@nifty.com">l77mmidori@nifty.com</a></p>
+      <p class="content-text">
+        TEL: <a href="tel:042-769-7735">042-769-7735</a><br>
+        FAX: 042-769-7734<br>
+        MAIL: <a href="mailto:l77mmidori@nifty.com">l77mmidori@nifty.com</a>
+      </p>
     </div>
     <div class="col-lg-4">
       <p class="content-text"><a href="/philosophy/">経営理念</a></p>

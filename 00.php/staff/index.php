@@ -159,7 +159,6 @@
             <div class="col-12 mt-5">
               <div class="text-start slide-bottom-content">
                 <h3 class="mb-3">他 スタッフ</h3>
-                <h3 class="ms-3">山本 紀代子</h3>
                 <h3 class="ms-3">溝呂木 大祐</h3>
               </div>
             </div>
