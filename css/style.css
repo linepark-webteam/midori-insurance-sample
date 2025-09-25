@@ -5,11 +5,11 @@
 body {
   background-image: url(../img/background2.webp);
   background-size: cover;
-  font-family: 'Klee One', 'cursive', 'Noto Serif JP', serif;
+  font-family: "Klee One", "cursive", "Noto Serif JP", serif;
 }
 
 h1 {
-  background-color: rgba(209, 243, 211, .5);
+  background-color: rgba(209, 243, 211, 0.5);
   margin: 0;
 }
 
@@ -32,8 +32,8 @@ h1 {
 
 .heading {
   font-weight: 600;
-  background-color:  #CCFFCC;
-  color: #004D40;
+  background-color: #ccffcc;
+  color: #004d40;
 }
 
 .hero {
@@ -93,7 +93,7 @@ section {
 .section-header:before,
 .section-header:after {
   position: absolute;
-  content: '';
+  content: "";
 }
 
 .section-header:after {
@@ -101,8 +101,8 @@ section {
   left: 0;
   width: 50px;
   height: 50px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
 }
 
 .section-header:before {
@@ -110,9 +110,22 @@ section {
   bottom: 0;
   width: 50px;
   height: 50px;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
 }
+
+@media screen and (max-width: 576px) {
+  .section-header:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .section-header:before {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .handling-products {
   padding: 0.8rem 0 0;
   margin-bottom: 0.2rem;
@@ -128,23 +141,23 @@ section {
 footer {
   background-color: rgba(0, 45, 55, 0.7);
   height: auto;
-  color: #E0E0E0;;
+  color: #e0e0e0;
 }
 /* フッターaタグホバー時のアニメーション */
 footer a {
   position: relative;
   text-decoration: none;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 footer a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1px; /* 下線の厚さ */
   bottom: 0;
   left: 0;
-  background-color: #FFFFFF; /* 下線の色 */
+  background-color: #ffffff; /* 下線の色 */
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -158,7 +171,6 @@ footer a:hover::after {
   font-size: small;
 }
 
-
 /* philosophy */
 .fade-in {
   animation-name: fade-in;
@@ -169,24 +181,23 @@ footer a:hover::after {
   list-style: none;
 }
 
-
 /* profile */
 .greet {
   /* border-bottom: 3px solid rgba(13, 114, 11, .5); */
-  border-top: 3px solid rgba(13, 114, 11, .5);
+  border-top: 3px solid rgba(13, 114, 11, 0.5);
 }
 
 /* company */
 .table-btn {
   border-radius: 50px;
-  padding: .5vw 2vw;
+  padding: 0.5vw 2vw;
   font-size: 16px;
   width: 50%;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 576px) {
   .table-btn {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
 
 /* contact */
@@ -205,12 +216,11 @@ footer a:hover::after {
   vertical-align: text-bottom;
 }
 .error {
-  color: rgb(231, 30, 30)
+  color: rgb(231, 30, 30);
 }
 
-
 /* Topへスクロールボタン全体 */
-#page_top{
+#page_top {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -218,27 +228,25 @@ footer a:hover::after {
   bottom: 15px;
   background: #22c486;
   border: 3px rgb(0, 80, 54) solid;
-  }
+}
 
-  /* Font Awesomeを使用 */
-    /* htmlの</body>直前に以下のscriptコードを記述。
+/* Font Awesomeを使用 */
+/* htmlの</body>直前に以下のscriptコードを記述。
   <script src="https://kit.fontawesome.com/e7eaec89a2.js" crossorigin="anonymous"></script> */
-  #page_top::before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f077';
-    font-size: 16px;
-    color: #ffffff;
-    position: absolute;
-    width: 50px;
-    height: 16px;
-    top: 0;
-    bottom: 5px;
-    right: 0;
-    left: -2px;
-    margin: auto;
-    text-align: center;
-    text-decoration: none;
-  }
-
-
+#page_top::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  width: 50px;
+  height: 16px;
+  top: 0;
+  bottom: 5px;
+  right: 0;
+  left: -2px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+}

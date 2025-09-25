@@ -270,7 +270,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             <!-- 送信ボタン -->
             <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-outline-success col-4">確認ページへ</button>
+              <button type="submit" class="btn btn-outline-success col-8 col-md-4">確認ページへ</button>
             </div>
           </form>
 
