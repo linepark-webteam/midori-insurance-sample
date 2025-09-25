@@ -1,6 +1,7 @@
 /ignore-privacy-notice
 /参考資料
 .htaccess
+.htaccess.bk
 /vender
 .DS_Store
 Thumbs.db
