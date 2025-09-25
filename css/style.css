@@ -1,0 +1,240 @@
+/* Style root */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/background2.webp);
+  background-size: cover;
+  font-family: 'Klee One', 'cursive', 'Noto Serif JP', serif;
+}
+
+h1 {
+  background-color: rgba(209, 243, 211, .5);
+  margin: 0;
+}
+
+/* TOPページ及び、共通のスタイル */
+
+/* ナビゲーションメニュー */
+.navbar .navbar-brand {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+.navbar-nav .nav-link:hover {
+  background-color: #299329;
+  color: #fff;
+}
+/* ドロップダウンメニューのリンク */
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+  background-color: #299329;
+  color: #fff;
+}
+
+.heading {
+  font-weight: 600;
+  background-color:  #CCFFCC;
+  color: #004D40;
+}
+
+.hero {
+  width: 100%;
+}
+
+.cover-img {
+  width: 100vw;
+  max-width: 4000px;
+}
+
+section {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+}
+
+.contact .col-6 {
+  padding: 0;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-fixed-text {
+  z-index: 10;
+  bottom: 20%;
+  left: 10%;
+}
+
+.contactform-fixed-text {
+  z-index: 10;
+  bottom: 20%;
+  left: 10%;
+}
+.masked {
+  position: relative;
+}
+
+.masked::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section-header {
+  position: relative;
+  padding: 1em 3em;
+  text-align: center;
+}
+
+.section-header:before,
+.section-header:after {
+  position: absolute;
+  content: '';
+}
+
+.section-header:after {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.section-header:before {
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.handling-products {
+  padding: 0.8rem 0 0;
+  margin-bottom: 0.2rem;
+  background-image: linear-gradient(135deg, #00ff26 10%, #04970b 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 13px;
+  background-position: bottom;
+  color: #353535;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgba(0, 45, 55, 0.7);
+  height: auto;
+  color: #E0E0E0;;
+}
+/* フッターaタグホバー時のアニメーション */
+footer a {
+  position: relative;
+  text-decoration: none;
+  color: #E0E0E0;
+}
+
+footer a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px; /* 下線の厚さ */
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF; /* 下線の色 */
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+.copyright {
+  height: 50px;
+  font-size: small;
+}
+
+
+/* philosophy */
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.policy-list {
+  list-style: none;
+}
+
+
+/* profile */
+.greet {
+  /* border-bottom: 3px solid rgba(13, 114, 11, .5); */
+  border-top: 3px solid rgba(13, 114, 11, .5);
+}
+
+/* company */
+.table-btn {
+  border-radius: 50px;
+  padding: .5vw 2vw;
+  /* padding-top: .5vw;
+  padding-bottom: .5vw; */
+  font-size: 16px;
+}
+
+/* contact */
+.form-group a {
+  color: rgb(76, 76, 220);
+  text-decoration: underline rgb(76, 76, 220);
+  font-weight: 600;
+}
+.form-group a:hover {
+  color: #4a2554;
+  font-weight: 600;
+}
+
+.form-group label {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 879));
+  vertical-align: text-bottom;
+}
+.error {
+  color: rgb(231, 30, 30)
+}
+
+
+/* Topへスクロールボタン全体 */
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  background: #22c486;
+  border: 3px rgb(0, 80, 54) solid;
+  }
+
+  /* Font Awesomeを使用 */
+    /* htmlの</body>直前に以下のscriptコードを記述。
+  <script src="https://kit.fontawesome.com/e7eaec89a2.js" crossorigin="anonymous"></script> */
+  #page_top::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f077';
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    top: 0;
+    bottom: 5px;
+    right: 0;
+    left: -2px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+  }
+
+

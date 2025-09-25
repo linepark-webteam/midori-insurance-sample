@@ -1,0 +1,81 @@
+/* ボタンのスタイル */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 24px;
+}
+
+.btn-small {
+  border-radius: 1px;
+}
+
+.btn-large {
+  border-radius: 3px;
+}
+
+/* フォントのスタイル */
+/* :root{
+  --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  font-family: var(--font-family-sans-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-sans-serif);
+} */
+
+.bg-twitter {
+  background-color: #55acee;
+  text: #fff;
+}
+
+.bg-mastodon {
+  background-color: #2b90d9;
+  text: #fff;
+}
+
+.bg-facebook {
+  background-color: #3b5998;
+  text: #fff;
+}
+
+.bg-linkedin {
+  background-color: #0079ba;
+  text: #fff;
+}
+
+.bg-github {
+  background-color: #333;
+  text: #fff;
+}
+
+.bg-qiita {
+  background-color: #79bd28;
+  text: #fff;
+}
+
+.bg-misskey {
+  background-color: #00acc1;
+  text: #fff;
+}
+
+.bg-soundcloud {
+  background-color: #ff3300;
+  text: #fff;
+}
+
+/* aタグのスタイル */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: white;
+}

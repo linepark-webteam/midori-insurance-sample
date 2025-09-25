@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.midori-hoken\.com$ [NC]
+RewriteRule ^(.*)$ https://midori-hoken.com/$1 [L,R=301]
