@@ -91,7 +91,7 @@
         <h4>2025年11月25日（火）</h4>
         <h3>速読セミナー　「読む力、変わる120分」　開催！</h3>
         <div class="d-flex justify-content-center">
-          <button class="btn btn-outline-success col-lg-4 mt-5"><a href="campaign/">詳細はこちら！</a></button>
+          <a class="btn btn-outline-success col-lg-4 mt-5" href="campaign/">詳細はこちら！</a>
         </div>
       </div>
     </div>
@@ -104,8 +104,8 @@
       <div class="row">
         <p class="col-12 h3">誠心誠意をもって、お客様の安心と安全に尽くす</p>
         <div class="d-flex flex-column flex-lg-row justify-content-around">
-          <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="philosophy/">経営理念</a></button>
-          <button class="btn btn-outline-success col-12 col-lg-5 mt-5"><a href="company/">会社概要</a></button>
+          <a class="btn btn-outline-success col-12 col-lg-5 mt-5" href="philosophy/">経営理念</a>
+          <a class="btn btn-outline-success col-12 col-lg-5 mt-5" href="company/">会社概要</a>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
         <div class="col-lg-6 slide-bottom-content">
           <h2 class="px-2 py-2 col-12 heading">個人のお客様</h2>
           <p>クルマ、住まい、ケガ、さまざまなタイプの商品をラインナップ。充実した補償とサービスであなたの生活をサポートします。</p>
-          <button class="btn btn-outline-success col-12 fade-in"><a href="personal-products/">個人向け商品紹介</a></button>
+          <a class="btn btn-outline-success col-12 fade-in" href="personal-products/">個人向け商品紹介</a>
         </div>
         <div class="col-lg-6 slide-right-content mb-3">
           <img class="col-12 mt-3" src="img/image1.webp" alt="個人向け商品紹介">
@@ -136,7 +136,7 @@
         <div class="col-lg-6 slide-right-content">
           <h2 class="px-2 py-2 col-12 heading">法人のお客様</h2>
           <p>ビジネスシーンに応じたさまざまなタイプの商品をラインナップ。充実した補償とサービスで貴社の事業をサポートします。</p>
-          <button class="btn btn-outline-success col-12"><a href="/corporation-products/">法人向け商品紹介</a></button>
+          <a class="btn btn-outline-success col-12" href="corporation-products/">法人向け商品紹介</a>
         </div>
         <div class="col-lg-6 slide-bottom-content">
           <img class="col-12 mt-3" src="img/image2.webp" alt="法人向け商品紹介">
