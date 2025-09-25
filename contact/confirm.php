@@ -97,9 +97,9 @@ $privacyPolicy = $_SESSION['privacyPolicy'] ?? '';
           <h4><?php echo nl2br(htmlspecialchars($inquiry)); ?></h4>
         </div>
 
-        <div class="d-flex justify-content-center">
-          <a href="contact/" class="btn btn-secondary me-3">修正する</a>
-            <button type="submit" class="btn btn-primary">送信する</button>
+        <div class="d-flex justify-content-start gap-3">
+          <a href="contact/" class="btn btn-secondary fix-btn">修正する</a>
+            <button type="submit" class="btn btn-success">送信する</button>
         </div>
     </form>
 </section>

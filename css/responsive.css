@@ -80,6 +80,10 @@
   button[type="submit"] {
     font-size: calc(16px + 2 * ((100vw - 320px) / 640));
   }
+  /* 修正ボタン */
+  .fix-btn {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 640));
+  }
 }
 
 /* 以下、微調整項目 */
