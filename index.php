@@ -4,7 +4,7 @@
 <?php require_once __DIR__ . '/config.php'; ?>
 
 <head>
-  
+
   <?php include BASE_PATH . '/includes/head.php'; ?>
 
   <meta name="keywords" content="みどり保険, 相模原, 保険, 濱島一志, 神奈川">
@@ -27,7 +27,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07XZCD6JK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-K07XZCD6JK');
@@ -91,10 +94,20 @@
         <h4>2025年11月25日（火）</h4>
         <h3>速読セミナー　「読む力、変わる120分」　開催！</h3>
         <div class="d-flex justify-content-center">
-          <a class="btn btn-outline-success col-lg-4 mt-5" href="campaign/">詳細はこちら！</a>
+          <a class="btn btn-outline-success col-lg-4 mt-5" href="campaign/speed-reading-seminar.php">詳細はこちら！</a>
         </div>
       </div>
     </div>
+
+    <div class="container slide-left-content pt-5">
+      <div class="row">
+        <h3>高西先生背骨調整治療セミナー　開催！</h3>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-outline-success col-lg-4 mt-5" href="campaign/takanishi-seminar.php">詳細はこちら！</a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- 経営理念 -->
