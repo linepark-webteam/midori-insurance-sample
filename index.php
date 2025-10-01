@@ -1,3 +1,5 @@
+<?php //TOPページ ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -94,7 +96,7 @@
         <h4 class="seminar-date">2025年11月25日（火）</h4>
         <h3 class="seminar-title">速読セミナー　「読む力、変わる120分」　開催！</h3>
         <div class="d-flex justify-content-center">
-          <a class="btn btn-outline-success col-lg-4 mt-5" href="campaign/speed-reading-seminar.php">詳細はこちら！</a>
+          <a class="btn btn-outline-success col-12 col-lg-4 mt-3" href="campaign/speed-reading-seminar.php">詳細はこちら！</a>
         </div>
       </div>
     </div>
@@ -103,7 +105,7 @@
       <div class="row">
         <h3 class="seminar-title">高西先生背骨調整治療セミナー　開催！</h3>
         <div class="d-flex justify-content-center">
-          <a class="btn btn-outline-success col-lg-4 mt-5" href="campaign/takanishi-seminar.php">詳細はこちら！</a>
+          <a class="btn btn-outline-success col-12 col-lg-4 mt-3" href="campaign/takanishi-seminar.php">詳細はこちら！</a>
         </div>
       </div>
     </div>

@@ -52,43 +52,90 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
-  const navbarCollapse = document.getElementById("navbarNav");
-  const toggler = document.querySelector(".navbar-toggler");
+  const navbar     = document.querySelector(".navbar");
+  const navbarColl = document.getElementById("navbarNav");
+  const toggler    = document.querySelector(".navbar-toggler");
 
   function isMobileNav() {
     return toggler && window.getComputedStyle(toggler).display !== "none";
   }
 
-  function closeNavbarIfOpen() {
-    if (!navbarCollapse) return;
-    const instance =
-      bootstrap.Collapse.getInstance(navbarCollapse) ||
-      new bootstrap.Collapse(navbarCollapse, { toggle: false });
-    instance.hide();
+  function getHeaderHeight() {
+    return navbar ? navbar.getBoundingClientRect().height : 0;
   }
 
-  // 「閉じる」の対象を“遷移するリンク”に限定
+  function closeNavbarIfOpen() {
+    if (!navbarColl) return null;
+    const instance =
+      bootstrap.Collapse.getInstance(navbarColl) ||
+      new bootstrap.Collapse(navbarColl, { toggle: false });
+    instance.hide();
+    return instance;
+  }
+
+  function scrollWithOffset(hash) {
+    const target = document.querySelector(hash);
+    if (!target) return;
+    const y = target.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight() - 8;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+
   document.querySelectorAll("#navbarNav a").forEach((a) => {
     a.addEventListener("click", (e) => {
-      // 1) ドロップダウンの“開閉トグル”は除外
+      // ドロップダウン開閉トグルは除外
       const isDropdownToggle =
         a.classList.contains("dropdown-toggle") ||
         a.getAttribute("data-bs-toggle") === "dropdown";
+      if (isDropdownToggle) return;
 
-      if (isDropdownToggle) {
-        // ドロップダンを開く操作なので、閉じない
+      const href = a.getAttribute("href") || "";
+
+      // ----------------------
+      // 1) ページ内アンカーか判定
+      // ----------------------
+      const url = new URL(href, location.href); // 絶対URL化
+      const samePage = url.pathname === location.pathname; // 同一ページか？
+      const isHashOnly = url.hash && samePage; // 同一ページ + ハッシュあり
+
+      // --- 同一ページ内のアンカーなら「閉じてからスクロール」 ---
+      if (isHashOnly) {
+        e.preventDefault();
+        if (isMobileNav()) {
+          closeNavbarIfOpen();
+          navbarColl.addEventListener(
+            "hidden.bs.collapse",
+            () => {
+              scrollWithOffset(url.hash);
+              history.pushState(null, "", url.hash);
+            },
+            { once: true }
+          );
+        } else {
+          scrollWithOffset(url.hash);
+          history.pushState(null, "", url.hash);
+        }
         return;
       }
 
-      // 2) 実際に遷移するリンクか判定（#のみ / javascript: は除外）
-      const href = a.getAttribute("href") || "";
-      const navigates =
-        href && href !== "#" && !href.toLowerCase().startsWith("javascript:");
-
-      if (isMobileNav() && navigates) {
+      // ----------------------
+      // 2) 通常のリンク遷移（他ページ含む）
+      // ----------------------
+      if (isMobileNav()) {
         closeNavbarIfOpen();
       }
+      // → e.preventDefault() はしないので通常遷移OK
     });
   });
+
+  // ----------------------
+  // ページ読込時に #付きなら補正スクロール
+  // ----------------------
+  window.addEventListener("load", function () {
+    if (location.hash) {
+      setTimeout(() => scrollWithOffset(location.hash), 0);
+    }
+  });
 });
+

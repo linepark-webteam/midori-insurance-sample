@@ -25,7 +25,7 @@
           <a class="nav-link active" aria-current="page" href="">ホーム</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#campaign">お知らせ</a>
+          <a class="nav-link" href="<?= htmlspecialchars($baseUrl, ENT_QUOTES) ?>#campaign">お知らせ</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
