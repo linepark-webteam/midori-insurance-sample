@@ -87,7 +87,7 @@
   </section>
 
   <!-- お知らせ -->
-  <section id="campaign" class="pb-5">
+  <section id="campaign" class="anchor-offset pb-5">
     <h2 class="px-2 py-2 col-12 heading">お知らせ</h2>
     <div class="container slide-right-content">
       <div class="row">

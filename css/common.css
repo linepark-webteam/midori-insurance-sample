@@ -1,7 +1,11 @@
-/* Style root */
+/* ===========
+  /css/common.css
+  共通CSS
+============*/
 * {
   box-sizing: border-box;
 }
+
 body {
   background-image: url(../img/background2.webp);
   background-size: cover;
@@ -13,9 +17,23 @@ h1 {
   margin: 0;
 }
 
-/* TOPページ及び、共通のスタイル */
+/*========================================= 
+  ヘッダー高のCSS変数（既存の高さに合わせる）
+  ヘッダー分の余白を確保
+=========================================*/
+:root { --header-height: 80px; }
+@media (max-width: 576px) {
+  :root { --header-height: 60px; }
+}
+/* 以下をID見出しやセクションに付ける（例: <section id="campaign" class="anchor-offset">） */
+.anchor-offset {
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
+/* 共通のスタイル */
 
 /* ナビゲーションメニュー */
+
 .navbar {
   height: 80px;
 }
@@ -23,6 +41,12 @@ h1 {
   .navbar {
     height: 60px;
   }
+}
+
+.navbar-collapse {
+  width: 100%;
+  padding-inline: 0.5rem;
+  background-color: #ffffff;
 }
 .navbar .navbar-brand {
   font-size: clamp(1rem, 2vw, 2rem);
