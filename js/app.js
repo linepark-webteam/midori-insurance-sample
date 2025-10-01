@@ -1,6 +1,3 @@
-console.log('test');
-
-
 // ページの全コンテンツがロードされた後にプリローダーを非表示にする
 window.onload = function() {
   // プリローダーアニメーション
@@ -18,13 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.onload = function() {
     preloader.style.display = 'none';
   };
-
-    // ＊テスト用コード＊3秒後に要素が読み込まれた後にプリローダーを非表示にする
-    // window.onload = function() {
-    //   setTimeout(function() {
-    //     preloader.style.display = 'none';
-    //   }, 3000); // 3秒後に非表示
-    // };
 
   // セクションの要素を取得
   const slideInRightElements = document.querySelectorAll('.slide-right-content');
@@ -45,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         element.classList.add('visible');
     }
 }
-
 
 window.addEventListener('scroll', function() {
   slideInRightElements.forEach(element => {

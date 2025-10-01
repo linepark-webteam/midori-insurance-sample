@@ -16,6 +16,14 @@ h1 {
 /* TOPページ及び、共通のスタイル */
 
 /* ナビゲーションメニュー */
+.navbar {
+  height: 80px;
+}
+@media screen and (max-width: 576px) {
+  .navbar {
+    height: 60px;
+  }
+}
 .navbar .navbar-brand {
   font-size: clamp(1rem, 2vw, 2rem);
 }

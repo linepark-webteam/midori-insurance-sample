@@ -21,6 +21,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/my-bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/top.css">
 <link rel="stylesheet" href="css/animation.css">
