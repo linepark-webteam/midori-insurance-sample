@@ -46,7 +46,7 @@ h1 {
 .navbar-collapse {
   width: 100%;
   padding-inline: 0.5rem;
-  background-color: #ffffff;
+  background-color: #f8f9fa;
 }
 .navbar .navbar-brand {
   font-size: clamp(1rem, 2vw, 2rem);
